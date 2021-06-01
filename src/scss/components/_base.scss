@@ -1,6 +1,28 @@
-$green:#00BC87;
-$logowidth:50px;
- 
+//_____Hero____
+// background
+$backgroundHero:#172A2E;
+//text-color
+$heroText:#EAE1CD;
+//btn
+$btnShop:#EAE1CD;
+
+
+////$marginHero:#E5E5E5;
+//
+////backgroundOnImages
+//$backgroundImgLight:#EAE1CD;
+//$backgroundImgDark:#D7A461;
+//
+////backgroundCards
+//$backgroundCard:#FDFAF3;
+//
+// //btn
+//
+//$btnShopDark:#172A2E;
+
+
+
+$logowidth:1px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
@@ -92,7 +114,7 @@ figure{
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: block;
   }
 
 

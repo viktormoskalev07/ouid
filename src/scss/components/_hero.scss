@@ -1,0 +1,47 @@
+.hero {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: $backgroundHero;
+  }
+
+  &__left-container {
+    min-width: 385px;
+    height: 540px;
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    color: $heroText;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 100%;
+    padding-bottom: 83px;
+  }
+  &__text{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    padding-bottom: 83px;
+    text-align: center;
+  }
+
+  &__right-container {
+    min-width: 330px;
+    height: 300px;
+  }
+  &__button{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 100%;
+    background-color: $btnShop;
+    padding: 28px 32px;
+  }
+}
