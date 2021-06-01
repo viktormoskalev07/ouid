@@ -7,20 +7,30 @@
     display: flex;
     justify-content: center;
   }
-  &__images-container{
+
+  &__images-container {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
+    @include lg {
+      align-items: center;
+    }
   }
 
   &__left-container {
+    width: 40%;
     position: relative;
-    width: 385px;
-    height: 540px;
+    display: flex;
+    align-items: flex-end;
+
+    @include lg {
+      width: 385px;
+      height: 540px;
+    }
   }
 
   &__img-left {
@@ -31,36 +41,70 @@
     position: absolute;
     left: 100px;
     top: 115px;
+    display: none;
+
+    @include lg {
+      display: block;
+    }
   }
 
   &__oval-centre {
     position: absolute;
     top: 175px;
     left: 190px;
+    display: none;
+
+    @include lg {
+      display: block;
+    }
   }
 
   &__oval-bottom {
     position: absolute;
     bottom: 200px;
     right: 80px;
+    display: none;
+
+    @include lg {
+      display: block;
+    }
   }
-  &__img-right{
+
+  &__img-right {
     position: absolute;
   }
-  &__oval-top-right{
+
+  &__oval-top-right {
     position: absolute;
     left: 130px;
     top: -120px;
+    display: none;
+
+    @include lg {
+      display: block;
+    }
   }
-  &__oval-top-centre{
+
+  &__oval-top-centre {
     position: absolute;
     left: 175px;
     bottom: 345px;
+    display: none;
+
+    @include lg {
+      display: block;
+    }
   }
-  &__oval-top-bottom{
+
+  &__oval-top-bottom {
     position: absolute;
     bottom: 120px;
     left: 200px;
+    display: none;
+
+    @include lg {
+      display: block;
+    }
   }
 
   &__content-container {
@@ -75,43 +119,66 @@
   }
 
   &__title {
-    min-width: 700px;
     width: 100%;
     font-weight: bold;
-    font-size: 72px;
+    font-size: 40px;
     line-height: 100%;
+    padding: 0 15px;
+
+    @include lg {
+      font-size: 72px;
+      min-width: 700px;
+    }
+    @media  (max-width: 1105px){
+      font-size: 55px;
+    }
   }
 
   &__text {
-    max-width: 425px;
+    padding: 0 15px;
     width: 100%;
+    max-width: 425px;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 120%;
     padding-bottom: 60px;
     text-align: center;
+
+    @include lg {
+      font-size: 18px;
+    }
   }
 
   &__right-container {
-    width: 330px;
-    height: 300px;
+    width: 40%;
     position: relative;
-    right: 0;
+    display: flex;
+    align-items: flex-end;
+
+    @include lg {
+      width: 330px;
+      height: 300px;
+    }
   }
 
   &__button {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 16px;
     line-height: 100%;
     background-color: $btnShop;
     padding: 20px 30px;
     border: none;
     border-radius: 5px;
+    &:hover{
+      box-shadow: -1px -1px 16px 0px rgba(246, 248, 249, 0.2);
+    }
+
+    @include lg {
+      font-size: 25px;
+    }
 
     &:after {
       content: url("/images/hero/card.svg");
-      width: 10px;
-      height: 10px;
     }
   }
 }
