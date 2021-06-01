@@ -1,0 +1,24 @@
+$main-button:green;
+$main-button-hover:rgb(9, 65, 9);
+ 
+.button{
+    width: 100%;
+    display: inline-block;
+    padding:10px 25px;
+    background-color: $main-button;
+    border:solid $main-button;
+    font-size: 24px;
+    color:white;
+    border-radius: 4px;
+      cursor: pointer;
+  }
+  
+  .button:hover{
+    color:$green;
+    background-color: white;
+  }
+  
+  
+ 
+
+

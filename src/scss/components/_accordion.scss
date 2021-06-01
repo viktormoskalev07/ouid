@@ -1,0 +1,77 @@
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  z-index: 0;
+ 
+
+  &__item {
+    @media screen and(min-width: $md) {
+      font-size: 24px;
+    };
+    text-transform: none;
+    color: red;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    border-bottom: 1px solid #C4C4C4;
+
+    &.is-open {
+      border-bottom: none;
+    }
+  }
+
+  &__title {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      content: url('../images/icons/up.png');
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease-in;
+    }
+
+    .is-open &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__title-text {
+    @media screen and(min-width: $md) {
+      font-size: 24px;
+    };
+    text-transform: none;
+    max-width: 750px;
+    width: 80%;
+    color: red;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+  
+  }
+
+  &__body {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    border-bottom: 1px solid #C4C4C4;
+  }
+
+  &__content {
+    @media screen and(min-width: $md) {
+      font-size: 14px;
+    };
+    font-size: 12px;
+    line-height: 110%;
+    transition: max-height 0.2s ease-out;
+    max-width: 700px;
+    width: 80%;
+  }
+}
