@@ -99,15 +99,17 @@
       transition: .3s;
     }
 
-    &:hover {
+    &:hover, &:focus {
       transform: translateY(-4px);
       img {
         transform: scale(1.05);
       }
       h5 {
-        // text-decoration: underline;
         color: $clr-text-accent;
       }
+    }
+    &:focus {
+      outline: none;
     }
   }
 

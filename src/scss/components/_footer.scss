@@ -1,6 +1,199 @@
-footer{
-  padding: 20px 10px 30px 10px;
-  background-color:#000;
-  color:white;
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+  }
+
+  &__links {
+    order: 2;
+    background-color: $clr-footer-1;
+    color: $clr-light;
+
+    @include md {
+      order: 1;
+      flex: 0 0 40%;
+    }
+
+    .footer-links {
+      width: 80%;
+      margin: 40px auto;
+
+      ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+
+        &:not(:last-of-type) {
+          margin-right: 15px;
+        }
+
+        li {
+          margin: 15px 0;
+
+          a {
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: -3px;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: $clr-light;
+              transition: .3s;
+            }
+
+            &:hover, &:focus {
+              outline: none;
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @include sm {
+          flex-direction: row;
+        }
+      }
+
+      &__contact {
+        @include sm {
+          margin-left: auto;
+        }
+      }
+
+      &__socials {
+        a {
+          margin-right: 15px;
+
+          svg {
+            path {
+              fill: $clr-light;
+              transition: .3s;
+            }
+          }
+
+          &:hover, &:focus {
+
+            svg {
+              path {
+                fill: $clr-text-accent;
+              }
+            }
+          }
+
+          &::after {
+            content: none !important;
+          }
+        }
+      }
+
+      &__copyright {
+        margin-top: 50px;
+        flex: 0 0 100%;
+        text-align: left;
+      }
+    }
+  }
+
+  &__form {
+    order: 1;
+    background-color: $clr-footer-2;
+
+    @include md {
+      order: 2;
+      flex: 0 0 60%;
+    }
+
+    .footer-form {
+      &__wrapper {
+        width: 80%;
+        margin: 40px auto;
+
+        p {
+          text-align: center;
+          opacity: .5;
+          @include md {
+            text-align: left;
+          }
+        }
+      }
+
+      &__title {
+        margin: 20px 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        @include md {
+          text-align: left;
+          font-size: 2rem;
+        }
+      }
+
+      // subscribe form
+      &__submit {
+        margin-top: 30px;
+
+        input, button {
+          border: 0;
+          height: 45px;
+          transition: .3s;
+
+          &:focus {
+            outline: transparent;
+          }
+        }
+
+        input {
+          width: 70%;
+          padding: 0 10px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 0;
+
+          @include xl {
+            width: 340px;
+          }
+
+          &:focus::placeholder {
+            color: transparent;
+          }
+
+          &:hover, &:focus, &:active {
+            box-shadow: 0px 0px 10px 4px $clr-shadow-d inset;
+          }
+        }
+
+        button {
+          width: 30%;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: $clr-light;
+          background-color: $clr-footer-1;
+          cursor: pointer;
+
+          @include xl {
+            width: 180px;
+          }
+
+          &:hover, &:focus {
+            box-shadow: 0px 0px 10px 4px $clr-shadow-l inset;
+          }
+        }
+      }
+    }
+  }
 }
- 
