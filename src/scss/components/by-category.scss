@@ -3,20 +3,6 @@
   background-color: $backgroundShopCannabis;
   position: relative;
 
-  &__wave-up {
-    position: absolute;
-    width: 100%;
-    bottom: 100%;
-    line-height: 0;
-  }
-
-  //&__wave-down {
-  //  top: 100%;
-  //  width: 100%;
-  //  transform: rotate(
-  //                  180deg
-  //  );
-  //}
 
   &__content {
     display: flex;
@@ -54,18 +40,14 @@
     height: 250px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   &__img {
     position: absolute;
     z-index: 2;
-    align-self: flex-end;
-    top: 0;
   }
 
-  &__bg-img {
-
-  }
 
   &__name {
     font-weight: bold;
@@ -84,4 +66,20 @@
     border-radius: 5px;
     border: none;
   }
+  .wave-up {
+    position: absolute;
+    width: 100%;
+    bottom: 100%;
+    line-height: 0;
+  }
+  .wave-down {
+    display: none;
+    top: 100%;
+    width: 100%;
+    transform: rotate(
+                    180deg
+    );
+  }
+
+
 }

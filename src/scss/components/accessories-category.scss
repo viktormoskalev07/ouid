@@ -1,0 +1,41 @@
+.accessories-category {
+  position: relative;
+  background-color: #172A2E;
+
+  .wave-up {
+    position: absolute;
+    width: 100%;
+    line-height: 0;
+    transform: rotate(
+                    180deg
+    );
+  }
+
+  .wave-down {
+    display: none;
+    bottom: 100%;
+    width: 100%;
+    transform: rotate(
+                    180deg
+    );
+  }
+
+  .by-category__cards-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .by-category__btn {
+    background-color: $ShopAccessoriesBtn;
+    color: $ShopAccessoriesBtnText;
+  }
+
+  .by-category__name {
+    color: $ShopAccessoriesText;
+  }
+
+  .by-category__content {
+    padding-top: 150px;;
+  }
+}
