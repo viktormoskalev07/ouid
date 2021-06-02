@@ -1,0 +1,85 @@
+.by-category {
+  width: 100%;
+  background-color: $backgroundShopCannabis;
+  position: relative;
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    color: $ShopCannabisTitle;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    @include lg {
+      font-size: 35px;
+    }
+  }
+
+  &__card {
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include lg {
+      min-width: 250px;
+    }
+
+  }
+
+  &__img-wrapper {
+    position: relative;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 2;
+    img{
+      object-fit: cover;
+    }
+  }
+
+
+  &__name {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    color: $ShopCannabisText;
+  }
+
+  &__btn {
+    background-color: $ShopCannabisBtn;
+    color: $ShopCannabisBtnText;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 100%;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all .5s ease;
+    &:hover{
+      box-shadow: -1px -1px 16px 0px rgb(1, 8, 12);
+    }
+  }
+
+  .wave {
+    margin-bottom: -2px;
+    position: absolute;
+    width: 100%;
+    bottom: 100%;
+    line-height: 0;
+  }
+}

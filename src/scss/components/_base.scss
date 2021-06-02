@@ -1,28 +1,54 @@
-//_____Hero____
-
+//_________________Hero______________________
 // background
-$backgroundHero:#172A2E;
+$backgroundHero: #172A2E;
 //text-color
-$heroText:#EAE1CD;
+$heroText: #EAE1CD;
 //btn
 $btnShop:#EAE1CD;
+//_______________________________________________
+
+//______________Shop Cannabis by category_______________________________________
+// background
+$backgroundShopCannabis: #D7A461;
+$backgroundCannabis: #EAE1CD;
+//text-color
+$ShopCannabisTitle: #EAE1CD;
+$ShopCannabisText: #172A2E;
+//btn
+$ShopCannabisBtn: #172A2E;
+$ShopCannabisBtnText: #FFFFFF;
+//________________________________________________________________________________
+
+//________________Shop Accessories by category____________________________________
+// background
+$backgroundAccessories: #172A2E;
+//text-color
+$ShopAccessoriesTitle: #EAE1CD;
+$ShopAccessoriesText: #FDFAF3;
+//btn
+$ShopAccessoriesBtn: #EAE1CD;
+$ShopAccessoriesBtnText: #172A2E;
+//________________________________________________________________________________
+
+
+
 //grid blog backgrounds
 $clr-bg-1: #EDE5D1;
 $clr-bg-2: #FDFAF3;
 
 //color white
 $clr-light: #ffffff;
+$btnShop: #EAE1CD;
 
-//footer bg 
+//footer bg
 $clr-footer-1: #182A2D;
 $clr-footer-2: #D7A461;
 $clr-shadow-l: rgba(255, 255, 255, 0.5);
 $clr-shadow-d: rgba(0, 0, 0, 0.5);
 
-
 //text-color
 $clr-text-main: #333333;
-$clr-text-accent: #D7A461;
+$clr-text-accent: #d7a461;
 
 //font-base
 $font-base: 18px;
@@ -100,25 +126,30 @@ html , body{
 }
 
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
- 
+
 
 h1,h2,h3,h4{
   text-align: center;
   line-height: 1.5;
 }
 
-figure{
+figure {
   margin: 0;
   padding: 0;
   font-size: 0;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   display: block;
 }
+
+
+  
+ 
+ 
