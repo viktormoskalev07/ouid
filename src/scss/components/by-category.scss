@@ -69,6 +69,10 @@
     padding: 15px 30px;
     border-radius: 5px;
     border: none;
+    transition: all .5s ease;
+    &:hover{
+      box-shadow: -1px -1px 16px 0px rgb(1, 8, 12);
+    }
   }
 
   .wave {

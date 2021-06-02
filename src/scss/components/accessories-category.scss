@@ -29,6 +29,10 @@
   .by-category__btn {
     background-color: $ShopAccessoriesBtn;
     color: $ShopAccessoriesBtnText;
+    transition: all .5s ease;
+    &:hover{
+      box-shadow: -1px -1px 16px 0px rgb(215, 164, 97);
+    }
   }
 
   .by-category__name {
