@@ -2,19 +2,10 @@
   position: relative;
   background-color: #172A2E;
 
-  .wave-up {
+  .wave{
     position: absolute;
     width: 100%;
     line-height: 0;
-    transform: rotate(
-                    180deg
-    );
-  }
-
-  .wave-down {
-    display: none;
-    bottom: 100%;
-    width: 100%;
     transform: rotate(
                     180deg
     );
