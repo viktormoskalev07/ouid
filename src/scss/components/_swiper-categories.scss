@@ -5,7 +5,7 @@
   }
 
   .swiper-wrapper {
-    @include lg {
+    @include xl {
       transform: none !important;
       display: flex;
       justify-content: space-around;

@@ -212,8 +212,11 @@ const swiper = new Swiper(".swiper-categories", {
             spaceBetween: 30,
         },
         992: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 40,
+        },
+        1170: {
+            spaceBetween: 50,
         },
     },
 });
