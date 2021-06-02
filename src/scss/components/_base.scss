@@ -5,8 +5,20 @@ $backgroundHero: #172A2E;
 //text-color
 $heroText: #EAE1CD;
 //btn
+$btnShop:#EAE1CD;
+//grid blog backgrounds
+$clr-bg-1: #EDE5D1;
+$clr-bg-2: #FDFAF3;
+
+//color white
+$clr-light: #ffffff;
 $btnShop: #EAE1CD;
 
+//footer bg
+$clr-footer-1: #182A2D;
+$clr-footer-2: #D7A461;
+$clr-shadow-l: rgba(255, 255, 255, 0.5);
+$clr-shadow-d: rgba(0, 0, 0, 0.5);
 //Shop Cannabis by category
 // background
 $backgroundShopCannabis: #D7A461;
@@ -28,69 +40,63 @@ $ShopAccessoriesText: #FDFAF3;
 $ShopAccessoriesBtn: #EAE1CD;
 $ShopAccessoriesBtnText: #172A2E;
 
+//text-color
+$clr-text-main: #333333;
+$clr-text-accent: #D7A461;
 
-$logowidth: 1px;
+//font-base
+$font-base: 18px;
+
+$logowidth:1px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
-$xxl: 1400px;
+$xxl: 1400px; 
 @mixin sm {
-  @media (min-width: $sm) {
+  @media (min-width:$sm) {
     @content
   }
-}
-
-;
+}; 
 @mixin md {
-  @media (min-width: $md) {
+  @media (min-width:$md) {
     @content
   }
-}
-
-;
+}; 
 @mixin lg {
-  @media (min-width: $lg) {
+  @media (min-width:$lg) {
     @content
   }
-}
-
-;
+}; 
 @mixin xl {
-  @media (min-width: $xl) {
+  @media (min-width:$xl) {
     @content
   }
-}
-
-;
+}; 
 @mixin xxl {
-  @media (min-width: $xxl) {
+  @media (min-width:$xxl) {
     @content
   }
-}
-
-;
-
-body {
+};
+  
+body{
   background-color: rgb(199, 199, 199);
   // for popup noscroll 
 }
 
 // footer to bottom
-.body, html {
-  height: 100%;
-  min-height: 100vh;
+.body , html{
+height: 100%; 
+min-height: 100vh;
 }
-
-.header, footer {
+.header , footer {
   flex-grow: 0;
 }
-
-.main {
+.main{
   flex-grow: 1;
 }
 
-.main-wrapper {
+.main-wrapper{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -98,17 +104,19 @@ body {
   position: relative;
   background-color: #fff;
   overflow: hidden;
-
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+ 
 }
 
 * {
   box-sizing: border-box;
+}
+
+html , body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-base;
+  color: $clr-text-main;
 }
 
 
@@ -118,7 +126,7 @@ a {
 }
 
 
-h1, h2, h3, h4 {
+h1,h2,h3,h4{
   text-align: center;
   line-height: 1.5;
 }

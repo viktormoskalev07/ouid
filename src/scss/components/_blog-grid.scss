@@ -1,0 +1,133 @@
+.blog-grid {
+  padding: 40px 0;
+  background-color: $clr-bg-1;
+
+  @include lg {
+    padding: 90px 0;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @include md {
+      margin-bottom: 50px;
+      font-size: 2rem;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "a1""a2""a3""a4";
+    grid-gap: 35px;
+
+    @include lg {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "a2 a1""a3 a1""a4 a1";
+      grid-gap: 55px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: $clr-bg-2;
+    transition: .3s;
+
+    // grid system
+    &:nth-of-type(1) {
+      grid-area: a1;
+    }
+
+    &:nth-of-type(2) {
+      grid-area: a2;
+    }
+
+    &:nth-of-type(3) {
+      grid-area: a3;
+    }
+
+    &:nth-of-type(4) {
+      grid-area: a4;
+    }
+
+    &--main {
+      flex-direction: column;
+
+      picture {
+        @include sm {
+          height: 400px !important;
+        }
+        @include lg {
+          height: 100% !important;
+        }
+      }
+    }
+
+    &--sub {
+      flex-direction: column;
+
+      @include sm {
+        flex-direction: row;
+      }
+
+      picture {
+        @include sm {
+          max-width: 210px;
+          flex: 0 0 210px;
+        }
+      }
+    }
+
+    picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        transition: .3s;
+      }
+    }
+
+    h5 {
+      transition: .3s;
+    }
+
+    &:hover, &:focus {
+      transform: translateY(-4px);
+      img {
+        transform: scale(1.05);
+      }
+      h5 {
+        color: $clr-text-accent;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__caption {
+    padding: 20px;
+
+
+    @include lg {
+      padding: 35px;
+    }
+
+    h5 {
+      margin-top: 0;
+      font-size: 1.125rem;
+    }
+
+    time {
+      opacity: .6;
+    }
+  }
+}

@@ -2,11 +2,9 @@
 <html lang="ru">
 
 <head>
-
   <meta charset="UTF-8">
   <title>Amazing page</title>
   <link rel="stylesheet" href="css/main.css">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
@@ -25,6 +23,7 @@
     textBtn:"Shop Online",
     })
   </div>
+
   <section class="by-category">
   @@include('./html-templates/cannabis-by-category.html',{
   bgColor:"#D7A461",
@@ -82,14 +81,14 @@
     })
   </section>
 
-
+  @@include('./html-templates/blog-grid.html',{})
 
   <!--    @@include('./accordion_test.html',{-->
   <!--  })-->
 </main>
 
-<!--@@include('./html-templates/footer.html',{-->
-<!--})-->
+@@include('./html-templates/footer.html',{
+})
 
 </div>
 
