@@ -1,0 +1,49 @@
+.by-category {
+  width: 100%;
+  background-color: $backgroundShopCannabis;
+  position: relative;
+
+  &__wave {
+    position: absolute;
+    top: -265px;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 100%;
+    color: $ShopCannabisText;
+    text-transform: uppercase;
+  }
+
+  &__cards-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    height: 250px;
+  }
+
+  &__bg-img {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+
+
+}
