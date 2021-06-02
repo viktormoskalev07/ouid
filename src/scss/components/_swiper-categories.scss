@@ -8,10 +8,35 @@
     @include xl {
       transform: none !important;
       display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
+      justify-content: center;
       margin-left: -25px;
       margin-right: -25px;
+      min-width: 100%;
+      width: auto;
+      .swiper-slide {
+        width: 18% !important;
+        padding: 5px 25px;
+        margin: 5px 0 !important;
+      }
+    }
+  }
+}
+
+.swiper-accessories.swiper-container{
+  @include lg{
+    overflow: visible;
+    margin: 0;
+  }
+}
+
+.swiper-accessories {
+  .swiper-wrapper {
+    @include lg {
+      transform: none !important;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       min-width: 100%;
       width: auto;
       .swiper-slide {

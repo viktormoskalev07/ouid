@@ -15,7 +15,10 @@
   .by-category__cards-box {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
+    @include lg{
+      justify-content: space-around;
+    }
   }
 
   .by-category__btn {
@@ -33,5 +36,17 @@
 
   .by-category__content {
     padding-top: 150px;;
+  }
+  .by-category__img-wrapper {
+    height: 300px;
+    @include lg{
+      height: 250px;
+    }
+  }
+  .by-category__img {
+     top: 0;
+    @include lg{
+      top: inherit;
+    }
   }
 }
