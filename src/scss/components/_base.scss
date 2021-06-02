@@ -6,9 +6,21 @@ $backgroundHero:#172A2E;
 $heroText:#EAE1CD;
 //btn
 $btnShop:#EAE1CD;
+//grid blog backgrounds
+$clr-bg-1: #EDE5D1;
+$clr-bg-2: #FDFAF3;
+
+//color white
+$clr-light: #ffffff;
 
 
 
+//text-color
+$clr-text-main: #333333;
+$clr-text-accent: #D7A461;
+
+//font-base
+$font-base: 18px;
 
 $logowidth:1px;
 $sm: 576px;
@@ -70,14 +82,16 @@ min-height: 100vh;
  
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html , body{
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
+  font-size: $font-base;
+  color: $clr-text-main;
 }
 
 
