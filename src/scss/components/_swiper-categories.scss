@@ -1,23 +1,24 @@
-.swiper-categories{
-    margin-right: -20px;
-    @include sm {
-        margin-right: 0;
+.swiper-categories {
+  margin-right: -20px;
+  @include sm {
+    margin-right: 0;
+  }
+
+  .swiper-wrapper {
+    @include lg {
+      transform: none !important;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-left: -25px;
+      margin-right: -25px;
+      min-width: 100%;
+      width: auto;
+      .swiper-slide {
+        width: 18% !important;
+        padding: 5px 25px;
+        margin: 5px 0 !important;
+      }
     }
-    .swiper-wrapper{
-        @include lg {
-            transform: none !important;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap; 
-            margin-left: -25px;
-            margin-right: -25px;
-            min-width: 100%;
-            width: auto;
-            .swiper-slide{
-                width: 18% !important;
-                padding:5px 25px  ;
-                margin:5px 0 !important;
-            }
-        }
-    }
+  }
 }

@@ -10,36 +10,34 @@
     line-height: 0;
   }
 
-  &__wave-down {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    transform: rotate(
-                    180deg
-    );
-  }
+  //&__wave-down {
+  //  top: 100%;
+  //  width: 100%;
+  //  transform: rotate(
+  //                  180deg
+  //  );
+  //}
 
   &__content {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
   }
 
   &__title {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 100%;
     color: $ShopCannabisTitle;
     text-transform: uppercase;
     padding-bottom: 40px;
-  }
-
-  &__cards-box {
-
+    @include lg {
+      font-size: 35px;
+    }
   }
 
   &__card {
     width: auto;
-
     max-width: 100%;
     display: flex;
     flex-direction: column;
