@@ -12,7 +12,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    @include lg{
+    @include lg {
       justify-content: space-around;
     }
   }
@@ -21,7 +21,8 @@
     background-color: $ShopAccessoriesBtn;
     color: $ShopAccessoriesBtnText;
     transition: all .5s ease;
-    &:hover{
+
+    &:hover {
       box-shadow: 1px 1px 10px 0 #d7a461;;
     }
   }
@@ -33,15 +34,17 @@
   .by-category__content {
     padding-top: 150px;;
   }
+
   .by-category__img-wrapper {
     height: 300px;
-    @include lg{
+    @include lg {
       height: 250px;
     }
   }
+
   .by-category__img {
-     top: 0;
-    @include lg{
+    top: 0;
+    @include lg {
       top: inherit;
     }
   }
