@@ -10,7 +10,7 @@ window.onload= function(){
 // мобильное меню
 nav = document.querySelector(".nav");
 document.querySelector(".btn-menu").addEventListener("click" , togglenav);
-document.querySelector(".nav-menu").onclick = closenav;
+// document.querySelector(".nav-menu").onclick = closenav;
 
 document.querySelector(".nav-background").onclick = closenav;
 function closenav(){

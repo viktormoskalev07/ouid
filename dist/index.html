@@ -7,44 +7,101 @@
   <link rel="stylesheet" href="css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+  <style>
+    /* styling page */
+    :root {
+      /* -------hero------- */
+      --backgroundHero: #172A2E;
+      --heroText: #EAE1CD;
+      --btnShop: #EAE1CD;
+
+      /* ---shop by category--- */
+      --backgroundShopCannabis: #D7A461;
+      --ShopCannabisTitle: #EAE1CD;
+      --ShopCannabisText: #172A2E;
+      --ShopCannabisBtn: #172A2E;
+      --ShopCannabisBtnText: #FFFFFF;
+
+      /* ---shop accessories--- */
+      --backgroundAccessories: #172A2E;
+      --ShopAccessoriesTitle: #EAE1CD;
+      --ShopAccessoriesText: #FDFAF3;
+      --ShopAccessoriesBtn: #EAE1CD;
+      --ShopAccessoriesBtnText: #172A2E;
+
+      /* -----grid blog----- */
+      --blogColorBg1: #EDE5D1;
+      --blogColorBg2: #FDFAF3;
+
+      /* ----text-colors---- */
+      --clr-light: #ffffff;
+      --clr-text-main: #333333;
+      --clr-text-accent: #d7a461;
+      --font-base: 18px;
+
+      /* -------footer------- */
+      --footerColorBg1: #182a2d;
+      --footerColorBg2: #D7A461;
+      --footerFormShadowFocus: rgba(0, 0, 0, 0.5);
+    }
+  </style>
 </head>
 
 <body class="body">
 <div class="main-wrapper">
   <div class="header-place"></div>
 <header class="header">
-    
-    <div class="container ">
 
-<div class="header-content">
-    <div class="logo"><a href="#"><img src="images/logo.png" alt="Logo"></a></div>
+	<div class="container ">
 
-    <nav class="nav">
-    <div class="nav-menu">
-        <a href="#test1" class="nav-item"> menu 1</a>
-        <a href="#test2" class="nav-item"> menu 2</a>
-        <a href="#test3" class="nav-item"> menu 3</a>
-        <a href="#test4" class="nav-item"> menu 4</a>
-        <a href="#test5" class="nav-item"> menu 5</a>
-    </div>
-   
- <div class="nav-background"></div>
- <div class="btn-menu">
-    <div class="btn-menu-row"></div>
-    <div class="btn-menu-row"></div>
-    <div class="btn-menu-row"></div>
-</div>
+		<div class="header-content">
+			
+<nav class="nav">
+	<!-- can be changed  -->
+	<div class="nav-menu">
+		<div class="button-place"></div>
 
+		<ul class="nav-menu__wrap">
+			<li class="dropdown__activator"><a>SHOP</a></li>
+			<!-- can be changed  -->
+			<li tabindex="0" class="dropdown">
+				<ul id="menu-dropdown-nav" class="dropdown__inner">
+					<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a
+							href="https://github.com/">drop1</a></li>
+					<li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a
+							href="https://github.com/">drop2</a></li>
+					<li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a
+							href="https://github.com/">drop3</a></li>
+					<li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a
+							href="https://github.com/">drop4</a></li>
+					<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a
+							href="https://github.com/">a lot of text link</a></li>
+				</ul>
+			</li>
+
+			<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a
+					href="#WHOlesale">WHOlesale</a></li>
+			<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a
+					href="#locations">locations</a></li>
+			<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a
+					href="http://ouid/blog/">Blog</a></li>
+			<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a
+					href="#dealers">dealers</a></li>
+		</ul>
+	</div>
+
+	<div class="nav-background"></div>
+	<div class="btn-menu">
+		<div class="btn-menu-row"></div>
+		<div class="btn-menu-row"></div>
+		<div class="btn-menu-row"></div>
+	</div>
 </nav>
+		</div>
 
-    
-
-</div>
-
-
-</div>
+	</div>
 </header>
-
 
 
 <main class="main">
