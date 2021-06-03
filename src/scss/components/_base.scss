@@ -1,3 +1,6 @@
+//_________________Wave____________________
+
+
 //_________________Hero______________________
 // background
 $backgroundHero: #172A2E;
@@ -30,6 +33,16 @@ $ShopAccessoriesBtn: #EAE1CD;
 $ShopAccessoriesBtnText: #172A2E;
 //________________________________________________________________________________
 
+//_______________Location_________________________________________________________
+// background
+$backgroundLocation: #EDE5D1;
+$backgroundLocationCards: #FDFAF3;
+//text-color
+$locationText:#172A2E;
+//btn
+$locationBtnBg: #172A2E;
+$locationBtnText: #FFFFFF;
+//__________________________________________________________________________________
 
 
 //grid blog backgrounds
@@ -149,7 +162,20 @@ img {
   display: block;
 }
 
-
+.wave {
+  background-size: 50% 100%;
+  background-repeat: repeat-x;
+  position: absolute;
+  width: 100%;
+  line-height: 0;
+  height: 115px;
+  @include lg {
+    background-size: 35% 100%;
+  }
+  @include xxl {
+    background-size: 20% 100%;
+  }
+}
   
  
  
