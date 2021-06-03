@@ -25,7 +25,7 @@ var gulp = require('gulp'),
         },
         src: { //Пути откуда брать исходники
           html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-          js: ['node_modules/swiper/js/swiper.min.js',
+          js: ['node_modules/swiper/swiper-bundle.js',
           'src/js/*.js'
           ],//В стилях и скриптах нам понадобятся только main файлы
           style: 'src/scss/main.scss',

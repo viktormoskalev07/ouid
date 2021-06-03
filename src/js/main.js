@@ -195,3 +195,49 @@ try {
   console.log(e);
 }
 //dropdown
+
+
+//swiper
+
+const swiper = new Swiper(".swiper-categories", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+        1170: {
+            spaceBetween: 50,
+        },
+    },
+});
+
+const swiperAccessories = new Swiper(".swiper-accessories", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+    },
+});
+
+
