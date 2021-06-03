@@ -8,7 +8,7 @@
 
   &__links {
     order: 2;
-    background-color: $clr-footer-1;
+    background-color: $footerColorBg1;
     color: $clr-light;
 
     @include md {
@@ -108,7 +108,7 @@
 
   &__form {
     order: 1;
-    background-color: $clr-footer-2;
+    background-color: $footerColorBg2;
 
     @include md {
       order: 2;
@@ -171,7 +171,7 @@
           }
 
           &:hover, &:focus, &:active {
-            box-shadow: -2px 0px 8px 2px $clr-shadow-d ;
+            box-shadow: -2px 0px 8px 2px $footerFormShadowFocus ;
           }
         }
 
@@ -182,7 +182,7 @@
           text-transform: uppercase;
           font-weight: 700;
           color: $clr-light;
-          background-color: $clr-footer-1;
+          background-color: $footerColorBg1;
           cursor: pointer;
 
           @include xl {
@@ -190,7 +190,7 @@
           }
 
           &:hover, &:focus {
-            box-shadow: 2px 0px 8px 2px $clr-shadow-d ;
+            box-shadow: 2px 0px 8px 2px $footerFormShadowFocus ;
           }
         }
       }

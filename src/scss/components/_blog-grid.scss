@@ -1,6 +1,6 @@
 .blog-grid {
   padding: 40px 0;
-  background-color: $clr-bg-1;
+  background-color: $blogColorBg1;
 
   @include lg {
     padding: 90px 0;
@@ -34,7 +34,7 @@
     display: flex;
     border-radius: 25px;
     overflow: hidden;
-    background-color: $clr-bg-2;
+    background-color: $blogColorBg2;
 
     // grid system
     &:nth-of-type(1) {
@@ -91,7 +91,7 @@
       img {
         object-fit: cover;
         transition: .3s;
-        height: auto;
+        width: 100%;
       }
     }
 
