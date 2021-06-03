@@ -1,4 +1,8 @@
 .hero {
+  &--bg {
+    background-color: $headerBackgroundColor;
+  }
+
   &__wrapper {
     width: 100%;
     height: 100%;

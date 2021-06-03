@@ -5,7 +5,7 @@
 		display: block;
 		visibility: hidden;
 		position: absolute;
-		top: 25px;
+		top: 50px;
 		left: 0;
 
 		&:hover {
@@ -16,6 +16,16 @@
 	&__activator {
 		cursor: pointer;
 		z-index: 2;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: -30px;
+			left: 0;
+			width: 100%;
+		}
 
 		svg {
 			font-size: 1rem;
@@ -71,6 +81,7 @@
 		@include lg {
 			text-align: left;
 			padding: 0 10px;
+			min-width: 200px;
 		}
 
 		li {

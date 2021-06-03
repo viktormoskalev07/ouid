@@ -17,6 +17,7 @@
     color: $ShopCannabisTitle;
     text-transform: uppercase;
     padding-bottom: 40px;
+    text-align: center;
     @include lg {
       font-size: 35px;
     }
@@ -29,7 +30,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
     @include lg {
+      padding-bottom: 5px;
       min-width: 250px;
     }
 
@@ -71,15 +74,10 @@
     border: none;
     transition: all .5s ease;
     &:hover{
-      box-shadow: -1px -1px 16px 0px rgb(1, 8, 12);
+      box-shadow:  1px 1px 10px 0 rgb(1, 8, 12);
     }
   }
-
   .wave {
-    margin-bottom: -2px;
-    position: absolute;
-    width: 100%;
     bottom: 100%;
-    line-height: 0;
   }
 }
