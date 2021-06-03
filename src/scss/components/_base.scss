@@ -30,6 +30,22 @@ $ShopAccessoriesBtn: var(--ShopAccessoriesBtn, white);
 $ShopAccessoriesBtnText: var(--ShopAccessoriesBtnText, black);
 //________________________________________________________________________________
 
+//_______________Location_________________________________________________________
+// background
+$backgroundLocation: #EDE5D1;
+$backgroundLocationCards: #FDFAF3;
+//text-color
+$locationText:#172A2E;
+//btn
+$locationBtnBg: #172A2E;
+$locationBtnText: #FFFFFF;
+//__________________________________________________________________________________
+
+
+//grid blog backgrounds
+$clr-bg-1: #EDE5D1;
+$clr-bg-2: #FDFAF3;
+
 //color white
 $clr-light: var(--clr-light, white);
 //text-color
@@ -126,11 +142,6 @@ a {
 }
 
 
-h1,h2,h3,h4{
-  text-align: center;
-  line-height: 1.5;
-}
-
 figure {
   margin: 0;
   padding: 0;
@@ -142,3 +153,21 @@ img {
   height: 100%;
   display: block;
 }
+
+.wave {
+  background-size: 50% 100%;
+  background-repeat: repeat-x;
+  position: absolute;
+  width: 100%;
+  line-height: 0;
+  height: 115px;
+  @include lg {
+    background-size: 35% 100%;
+  }
+  @include xxl {
+    background-size: 20% 100%;
+  }
+}
+  
+ 
+ 

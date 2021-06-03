@@ -1,10 +1,96 @@
 <section class="location">
-    <div class="wave">
-        <?xml version="1.0" standalone="no"?>
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 170" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path style="transform:translate(0, 0px); opacity:1" fill=@@bgColorWaveTop
-                  d="M0,85L30,76.5C60,68,120,51,180,42.5C240,34,300,34,360,53.8C420,74,480,113,540,127.5C600,142,660,130,720,107.7C780,85,840,51,900,36.8C960,23,1020,28,1080,48.2C1140,68,1200,102,1260,96.3C1320,91,1380,45,1440,39.7C1500,34,1560,68,1620,79.3C1680,91,1740,79,1800,76.5C1860,74,1920,79,1980,73.7C2040,68,2100,51,2160,45.3C2220,40,2280,45,2340,53.8C2400,62,2460,74,2520,76.5C2580,79,2640,74,2700,62.3C2760,51,2820,34,2880,48.2C2940,62,3000,108,3060,130.3C3120,153,3180,153,3240,141.7C3300,130,3360,108,3420,102C3480,96,3540,108,3600,110.5C3660,113,3720,108,3780,110.5C3840,113,3900,125,3960,116.2C4020,108,4080,79,4140,79.3C4200,79,4260,108,4290,121.8L4320,136L4320,170L4290,170C4260,170,4200,170,4140,170C4080,170,4020,170,3960,170C3900,170,3840,170,3780,170C3720,170,3660,170,3600,170C3540,170,3480,170,3420,170C3360,170,3300,170,3240,170C3180,170,3120,170,3060,170C3000,170,2940,170,2880,170C2820,170,2760,170,2700,170C2640,170,2580,170,2520,170C2460,170,2400,170,2340,170C2280,170,2220,170,2160,170C2100,170,2040,170,1980,170C1920,170,1860,170,1800,170C1740,170,1680,170,1620,170C1560,170,1500,170,1440,170C1380,170,1320,170,1260,170C1200,170,1140,170,1080,170C1020,170,960,170,900,170C840,170,780,170,720,170C660,170,600,170,540,170C480,170,420,170,360,170C300,170,240,170,180,170C120,170,60,170,30,170L0,170Z"/>
-        </svg>
+    <div class="wave"
+         style='background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 679 78\" fill=\"%23172A2E\"%3E %3Cpath d=\"M877.15,18.94l-77,18.3c-100.88,24-210,23.92-310.82-.13C388.3,13,279,13,178,37.11s-210,24.09-310.85.13l-77-18.3A711.34,711.34,0,0,0-373.72,0H-404V369.6H1041V0A711.72,711.72,0,0,0,877.15,18.94Z\"/%3E%3C/svg%3E")'>
     </div>
+    <div class="location__bg">
+        <img src=@@imgBg alt=@@imgBgAlt>
+    </div>
+<div class="location__bg-wrap">
+    <div class="location__cards-box">
+        <div class="location__card">
+            <h3 class="location__title">@@title</h3>
+            <address class="location__sub-title">
+                @@subTitle
+            </address>
+            <div class="location__data-box">
+                <div class="location__data">
+                    <p class="location__days">
+                        @@days1
+                    </p>
+                    <p class="location__days">
+                        @@days2
+                    </p>
+                </div>
+                <div class="location__working-hours">
+                    <p class="location__time">
+                        @@time1
+                    </p>
+                    <p class="location__time">
+                        @@time2
+                    </p>
+                </div>
+            </div>
+            <a class="location__btn" href="#">
+                @@btn
+            </a>
+        </div>
+
+        <div class="location__card">
+            <h3 class="location__title">@@title2</h3>
+            <address class="location__sub-title">
+                @@subTitle2
+            </address>
+            <div class="location__data-box">
+                <div class="location__data">
+                    <p class="location__days">
+                        @@days1_2
+                    </p>
+                    <p class="location__days">
+                        @@days2_2
+                    </p>
+                </div>
+                <div class="location__working-hours">
+                    <p class="location__time">
+                        @@time1_2
+                    </p>
+                    <p class="location__time">
+                        @@time2_2
+                    </p>
+                </div>
+            </div>
+            <a class="location__btn" href="#">
+                @@btn
+            </a>
+        </div>
+
+        <div class="location__card">
+            <h3 class="location__title">@@title3</h3>
+            <address class="location__sub-title">
+                @@subTitle3
+            </address>
+            <div class="location__data-box">
+                <div class="location__data">
+                    <p class="location__days">
+                        @@days1_3
+                    </p>
+                    <p class="location__days">
+                        @@days2_3
+                    </p>
+                </div>
+                <div class="location__working-hours">
+                    <p class="location__time">
+                        @@time1_3
+                    </p>
+                    <p class="location__time">
+                        @@time2_3
+                    </p>
+                </div>
+            </div>
+            <a class="location__btn" href="#">
+                @@btn
+            </a>
+        </div>
+    </div>
+</div>
 
 </section>

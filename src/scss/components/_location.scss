@@ -1,11 +1,132 @@
-.location{
-  .wave{
-    margin-top: -3px;
+.location {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__bg-wrap {
+    background-color: $backgroundLocation;
     width: 100%;
-    line-height: 0;
-    top: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wave {
     transform: rotate(
                     180deg
     );
+    line-height: 0;
+  }
+
+  &__bg {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__cards-box {
+    padding: 0 15px;
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    color: $locationText;
+    bottom: 80px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    @include sm {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    @include lg {
+      width: 1380px;
+      position: relative;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+    padding: 30px 30px;
+    background-color: $backgroundLocationCards;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: $locationText;
+    @include sm {
+      width: 45%;
+      margin: 15px 0;
+    }
+    @include lg {
+      margin: 0;
+      padding: 60px 30px;
+      width: 30%;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    margin: 0;
+    @include lg {
+      font-size: 20px;
+    }
+    @include xxl {
+      font-size: 30px;
+    }
+  }
+
+  &__sub-title {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    @include lg {
+      font-size: 20px;
+    }
+  }
+
+  &__data-box {
+    display: flex;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 70px 0;
+    @include lg {
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__data {
+    padding-right: 30px;
+  }
+
+  &__btn {
+    background-color: $locationBtnBg;
+    color: $locationBtnText;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 100%;
+    padding: 15px 25px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    transition: all .5s ease;
+
+    &:hover {
+      box-shadow: 1px 1px 10px 0 rgb(1, 8, 12);
+    }
   }
 }
