@@ -51,7 +51,7 @@
   &__card {
     position: relative;
     width: 100%;
-    margin: 15px 30px;
+    margin: 15px 0;
     padding: 30px 30px;
     background-color: $backgroundLocationCards;
     border-radius: 25px;
@@ -97,9 +97,12 @@
   &__data-box {
     display: flex;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
-    padding: 60px 0;
+    padding: 70px 0;
+    @include lg {
+      font-size: 18px;
+    }
 
     p {
       margin: 0;
@@ -120,5 +123,10 @@
     border-radius: 5px;
     position: absolute;
     bottom: 30px;
+    transition: all .5s ease;
+
+    &:hover {
+      box-shadow: 1px 1px 10px 0 rgb(1, 8, 12);
+    }
   }
 }
