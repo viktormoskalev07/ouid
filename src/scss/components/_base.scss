@@ -1,36 +1,33 @@
-//_________________Wave____________________
-
-
 //_________________Hero______________________
 // background
-$backgroundHero: #172A2E;
+$backgroundHero: var(--backgroundHero, black);
 //text-color
-$heroText: #EAE1CD;
+$heroText: var(--heroText, white);
 //btn
-$btnShop:#EAE1CD;
+$btnShop: var(--btnShop, white);
 //_______________________________________________
 
 //______________Shop Cannabis by category_______________________________________
 // background
-$backgroundShopCannabis: #D7A461;
-$backgroundCannabis: #EAE1CD;
+$backgroundShopCannabis: var(--backgroundShopCannabis, orange);
+// $backgroundCannabis: #EAE1CD;
 //text-color
-$ShopCannabisTitle: #EAE1CD;
-$ShopCannabisText: #172A2E;
+$ShopCannabisTitle: var(--ShopCannabisTitle, white);
+$ShopCannabisText: var(--ShopCannabisText, black);
 //btn
-$ShopCannabisBtn: #172A2E;
-$ShopCannabisBtnText: #FFFFFF;
+$ShopCannabisBtn: var(--ShopCannabisBtn, white);
+$ShopCannabisBtnText: var(--ShopCannabisBtnText, black);
 //________________________________________________________________________________
 
 //________________Shop Accessories by category____________________________________
 // background
-$backgroundAccessories: #172A2E;
+$backgroundAccessories: var(--backgroundAccessories, black);
 //text-color
-$ShopAccessoriesTitle: #EAE1CD;
-$ShopAccessoriesText: #FDFAF3;
+$ShopAccessoriesTitle: var(--ShopAccessoriesTitle, white);
+$ShopAccessoriesText: var(--ShopAccessoriesText, white);
 //btn
-$ShopAccessoriesBtn: #EAE1CD;
-$ShopAccessoriesBtnText: #172A2E;
+$ShopAccessoriesBtn: var(--ShopAccessoriesBtn, white);
+$ShopAccessoriesBtnText: var(--ShopAccessoriesBtnText, black);
 //________________________________________________________________________________
 
 //_______________Location_________________________________________________________
@@ -50,21 +47,21 @@ $clr-bg-1: #EDE5D1;
 $clr-bg-2: #FDFAF3;
 
 //color white
-$clr-light: #ffffff;
-$btnShop: #EAE1CD;
+$clr-light: var(--clr-light, white);
+//text-color
+$clr-text-main: var(--clr-text-main, black);
+$clr-text-accent: var(--clr-text-accent, orange);
+//font-base
+$font-base: var(--font-base, 18px);
+
+//grid blog backgrounds
+$blogColorBg1: var(--blogColorBg1, gray);
+$blogColorBg2: var(--blogColorBg2, white);
 
 //footer bg
-$clr-footer-1: #182A2D;
-$clr-footer-2: #D7A461;
-$clr-shadow-l: rgba(255, 255, 255, 0.5);
-$clr-shadow-d: rgba(0, 0, 0, 0.5);
-
-//text-color
-$clr-text-main: #333333;
-$clr-text-accent: #d7a461;
-
-//font-base
-$font-base: 18px;
+$footerColorBg1: var(--footerColorBg1, black);
+$footerColorBg2: var(--footerColorBg2, orange);
+$footerFormShadowFocus: var(--footerFormShadowFocus, rgba(0, 0, 0, 0.5));
 
 $logowidth:1px;
 $sm: 576px;
