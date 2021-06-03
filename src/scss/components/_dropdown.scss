@@ -1,13 +1,12 @@
 .dropdown {
 	display: none;
 
-	@include md {
+	@include lg {
 		display: block;
 		visibility: hidden;
 		position: absolute;
 		top: 25px;
 		left: 0;
-		background-color: #fff;
 
 		&:hover {
 			visibility: visible;
@@ -15,9 +14,35 @@
 	}
 
 	&__activator {
+		cursor: pointer;
+		z-index: 2;
 
-		@include md {
-			&:hover {
+		svg {
+			font-size: 1rem;
+			margin-left: 10px;
+			transition: .3s;
+
+			@include lg {
+				margin-left: 5px;
+			}
+			@include xxl {
+				margin-left: 10px;
+			}
+		}
+
+		&.on-mouse-over {
+			svg {
+				transform: rotate(180deg);
+			}
+		}
+
+		@include lg {
+			&:hover, &:focus {
+				outline: none;
+
+				svg {
+					transform: rotate(180deg);
+				}
 
 				+.dropdown {
 					visibility: visible;
@@ -26,6 +51,11 @@
 		}
 
 		&.dropdown_open {
+
+			svg {
+				transform: rotate(180deg);
+			}
+
 			+.dropdown {
 				display: block;
 			}
@@ -35,5 +65,16 @@
 	&__inner {
 		list-style: none;
 		padding-left: 0;
+		text-align: center;
+		background-color: $headerBackgroundColor;
+
+		@include lg {
+			text-align: left;
+			padding: 0 10px;
+		}
+
+		li {
+			justify-content: flex-start;
+		}
 	}
 }

@@ -184,9 +184,19 @@ if (document.querySelector('.accordion')) {
 
 function dropdown() {
   const drop = document.querySelector(".dropdown__activator");
+  const dropBody = document.querySelector('.dropdown')
+
   drop.addEventListener("click", function () {
     drop.classList.toggle("dropdown_open");
   });
+  
+  dropBody.addEventListener('mouseenter', function() {
+    drop.classList.add('on-mouse-over')
+  })
+  dropBody.addEventListener('mouseleave', function() {
+    drop.classList.remove('on-mouse-over')
+  })
+
 }
 
 try {

@@ -1,32 +1,169 @@
-$nav-color:#000000;
-$nav-bgc:#d89c63;
-$nav-hover:#ac9034;
-
 .nav {
+	@include lg {
+		width: 100%;
+	}
+
 	&-menu {
+		max-height: 100vh;
 		z-index: 5;
 		top: 0;
-		background-color: $nav-bgc;
+		background-color: $headerBackgroundColor;
 		position: fixed;
 		left: 0;
 		right: 0;
 		text-align: center;
 		transform: translateY(-100%);
 
+		@media (max-width: 991.98px) {
+			padding-bottom: 40px;
+			overflow-y: auto;
+		}
+
+		@include lg {
+			display: flex;
+			background-color: inherit;
+			position: static;
+			transform: none;
+		}
+
 		&__wrap {
 			list-style: none;
 			padding-left: 0;
+			padding-top: 50px;
+
+			@include lg {
+				width: 40%;
+				margin: 10px 0;
+				padding-top: 0;
+				position: relative;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			li {
+				padding: 10px 0;
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: .75rem;
+
+				@include lg {
+					margin-right: 10px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				@include xxl {
+					margin-right: 35px;
+				}
+
+				a {
+					position: relative;
+
+					&::after {
+						content: '';
+						position: absolute;
+						bottom: -2px;
+						left: 0;
+						width: 0;
+						height: 2px;
+						transition: .3s;
+						background-color: $headerLinkDecarationColor;
+					}
+
+					&:hover, &:focus {
+						outline: none;
+
+						&::after {
+							width: 100%;
+							transition: .3s;
+						}
+					}
+				}
+			}
+		}
+
+		&__logo {
+			display: none;
+
+			@include lg {
+				position: static;
+				flex-grow: 1;
+				display: flex;
+				justify-content: center;
+				align-self: center;
+				margin-bottom: 10px;
+			}
+
+			&:hover, &:focus {
+				outline: none;
+			}
+		}
+
+		&__socials {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+			@include lg {
+				width: 40%;
+				justify-content: flex-end;
+				flex-direction: row;
+			}
+
+			.head-socials {
+				margin: 10px 0;
+
+				@include lg {
+					display: inherit;
+					align-items: center;
+				}
+
+				&__links {
+					a {
+						@include lg {
+							height: 19px;
+							margin-right: 20px;
+						}
+
+						svg {
+							transition: .2s;
+						}
+
+						&:hover, &:focus {
+							outline: none;
+
+							svg {
+								transform: scale(1.1);
+							}
+						}
+					}
+				}
+
+				&__menu {
+					a {
+						padding: 12px 24px;
+						text-transform: uppercase;
+						font-size: 0.875rem;
+						font-weight: 700;
+						background-color: $headerBtnBg;
+						color: $headerBtnColor;
+						border-radius: 5px;
+						transition: .3s;
+
+						&:hover, :focus {
+							outline: none;
+							box-shadow: 0 0px 8px 2px $headerShadowFocus;
+						}
+					}
+				}
+			}
 		}
 	}
 
-	&-item {
-		display: block;
-		padding: 20px 20px;
-		transition: 1s;
-
-		&:hover {
-			background-color: $nav-hover;
-			transition: 0.2s;
+	&-background {
+		@include lg {
+			display: none;
 		}
 	}
 }
@@ -58,7 +195,6 @@ $nav-hover:#ac9034;
 		}
 
 		&-row:nth-child(2) {
-
 			opacity: 0;
 			width: 0;
 		}
@@ -82,9 +218,13 @@ $nav-hover:#ac9034;
 	display: flex;
 	flex-direction: column;
 
+	@include lg {
+		display: none;
+	}
+
 	&-row {
 		transition: 0.2s;
-		background-color: $nav-color;
+		background-color: $headerLinkDecarationColor;
 		height: 3px;
 		width: 100%;
 	}
@@ -94,33 +234,14 @@ $nav-hover:#ac9034;
 	}
 }
 
+.nav-mobile-logo {
+	position: absolute;
+	height: 50px;
+	top: 10px;
+	left: 10px;
+	z-index: 10;
 
-@include md {
-	.nav {
-		width: 100%;
-
-		&-background {
-			display: none;
-		}
-
-		&-item {
-			display: inline-block;
-		}
-
-		&-menu {
-			padding-right: $logowidth;
-			background-color: inherit;
-			position: static;
-			transform: none;
-
-			&__wrap {
-				position: relative;
-				display: flex;
-			}
-		}
-	}
-
-	.btn-menu {
+	@include lg {
 		display: none;
 	}
 }
