@@ -29,7 +29,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
     @include lg {
+      padding-bottom: 5px;
       min-width: 250px;
     }
 
@@ -71,7 +73,7 @@
     border: none;
     transition: all .5s ease;
     &:hover{
-      box-shadow: -1px -1px 16px 0px rgb(1, 8, 12);
+      box-shadow:  1px 1px 10px 0 rgb(1, 8, 12);
     }
   }
 
