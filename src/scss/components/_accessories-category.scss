@@ -1,6 +1,41 @@
 .accessories-category {
   position: relative;
-  background-color: #172A2E;
+  background-color: $backgroundAccessories;
+
+  &__content {
+    padding-top: 150px;;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    color: $ShopAccessoriesTitle;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    text-align: center;
+    @include lg {
+      font-size: 35px;
+    }
+  }
+
+  &__card {
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    @include lg {
+      padding-bottom: 5px;
+      min-width: 250px;
+    }
+
+  }
 
   .wave-up {
     bottom: 100%;
@@ -15,7 +50,7 @@
     z-index: 11;
   }
 
-  .by-category__cards-box {
+  &__cards-box {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -24,7 +59,7 @@
     }
   }
 
-  .by-category__btn {
+  &__btn {
     background-color: $ShopAccessoriesBtn;
     color: $ShopAccessoriesBtnText;
     transition: all .5s ease;
@@ -34,25 +69,56 @@
     }
   }
 
-  .by-category__name {
+  &__name {
     color: $ShopAccessoriesText;
   }
 
-  .by-category__content {
-    padding-top: 150px;;
-  }
 
-  .by-category__img-wrapper {
+  &__img-wrapper {
+    position: relative;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     @include lg {
       height: 250px;
     }
   }
 
-  .by-category__img {
+  &__img {
+    position: absolute;
+    z-index: 2;
     top: 0;
     @include lg {
       top: inherit;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    color: $ShopCannabisText;
+  }
+
+  &__btn {
+    background-color: $ShopCannabisBtn;
+    color: $ShopCannabisBtnText;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 100%;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all .5s ease;
+
+    &:hover {
+      box-shadow: 1px 1px 10px 0 rgb(1, 8, 12);
     }
   }
 }
