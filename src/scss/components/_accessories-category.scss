@@ -2,6 +2,19 @@
   position: relative;
   background-color: #172A2E;
 
+  .wave-up {
+    bottom: 100%;
+    z-index: 0;
+  }
+
+  .wave-down {
+    transform: rotate(
+                    180deg
+    );
+    line-height: 0;
+    z-index: 11;
+  }
+
   .by-category__cards-box {
     display: flex;
     flex-wrap: nowrap;
