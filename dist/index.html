@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
-  <style>
+  <style class='styles-var'>
     /* styling page */
     :root {
       /* -------header------- */
@@ -153,6 +153,43 @@
 </header>
 
 
+  <!-- test -->
+  <section>
+    <div class="container"> 
+        <div class="colors-settings">
+                <textarea  id='colors-settings'  ></textarea>
+        </div>
+
+    </div>
+
+
+
+
+    <script> 
+            const styles = document.querySelector('.styles-var');
+            const test = styles.style.getPropertyValue('--backgroundHero');
+            const colorSettings= document.getElementById('colors-settings')
+            colorSettings.value=styles.innerHTML  ;
+            colorSettings.addEventListener('input' , ()=>{
+                styles.innerHTML=colorSettings.value;
+            } )
+            styles.style.setProperty(' --backgroundHero', 'red');
+            styles.style.setProperty(' --backgroundHero', 'red');
+    </script>
+
+
+
+</section>
+
+<style>
+    #colors-settings{
+        position: fixed;
+        z-index: 33333;
+        min-height: 200px;
+        width: 100%;
+    }
+</style>
+
 <main class="main hero--bg">
   <div class="container">
     <section class="hero">
@@ -200,6 +237,11 @@
 </section>
 
   </div>
+
+
+
+
+
 
   <section class="by-category">
   <div class="wave" style='background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 679 78\" fill=\"%23D7A461\"%3E %3Cpath d=\"M877.15,18.94l-77,18.3c-100.88,24-210,23.92-310.82-.13C388.3,13,279,13,178,37.11s-210,24.09-310.85.13l-77-18.3A711.34,711.34,0,0,0-373.72,0H-404V369.6H1041V0A711.72,711.72,0,0,0,877.15,18.94Z\"/%3E%3C/svg%3E")'>

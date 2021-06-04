@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
-  <style>
+  <style class='styles-var'>
     /* styling page */
     :root {
       /* -------header------- */
@@ -57,9 +57,11 @@
 
 <body class="body">
 <div class="main-wrapper">
-  @@include('./html-templates/header.html',{
-  })
+  @@include('./html-templates/header.html')
 
+
+  <!-- test -->
+  @@include('./html-templates/_theme_settings.html')
 
 <main class="main hero--bg">
   <div class="container">
@@ -69,6 +71,11 @@
     textBtn:"Shop Online",
     })
   </div>
+
+
+
+
+
 
   <section class="by-category">
   @@include('./html-templates/cannabis-by-category.html',{
