@@ -42,11 +42,21 @@ $ShopAccessoriesBtnText: var(--ShopAccessoriesBtnText, black);
 $backgroundLocation: #EDE5D1;
 $backgroundLocationCards: #FDFAF3;
 //text-color
-$locationText:#172A2E;
+$locationText: #172A2E;
 //btn
 $locationBtnBg: #172A2E;
 $locationBtnText: #FFFFFF;
 //__________________________________________________________________________________
+
+//______________Wholesale Portal___________________________________________________
+// background
+$backgroundWholesale:#172A2E;
+//text-color
+$wholesaleText: #EAE1CD;
+//btn
+$wholesaleBtnBg: #EAE1CD;
+$wholesaleBtnText: #172A2E;
+//___________________________________________________________________________________
 
 
 //grid blog backgrounds
@@ -74,51 +84,63 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
-$xxl: 1400px; 
+$xxl: 1400px;
 @mixin sm {
-  @media (min-width:$sm) {
+  @media (min-width: $sm) {
     @content
   }
-}; 
+}
+
+;
 @mixin md {
-  @media (min-width:$md) {
+  @media (min-width: $md) {
     @content
   }
-}; 
+}
+
+;
 @mixin lg {
-  @media (min-width:$lg) {
+  @media (min-width: $lg) {
     @content
   }
-}; 
+}
+
+;
 @mixin xl {
-  @media (min-width:$xl) {
+  @media (min-width: $xl) {
     @content
   }
-}; 
+}
+
+;
 @mixin xxl {
-  @media (min-width:$xxl) {
+  @media (min-width: $xxl) {
     @content
   }
-};
-  
-body{
+}
+
+;
+
+body {
   // for popup noscroll 
   background-color: $headerBackgroundColor;
 }
 
 // footer to bottom
-.body , html{
-height: 100%; 
-min-height: 100vh;
+.body, html {
+  height: 100%;
+  min-height: 100vh;
 }
-.header , footer {
+
+.header, footer {
   flex-grow: 0;
 }
-.main{
+
+.main {
   flex-grow: 1;
 }
 
-.main-wrapper{
+.main-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -136,7 +158,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html , body{
+html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -164,18 +186,51 @@ img {
 
 .wave {
   margin-bottom: -10px;
-  background-position-y: 10px;
+  background-position-y: 40px;
   background-size: 50% 100%;
   background-repeat: repeat-x;
   position: absolute;
   width: 100%;
   line-height: 0;
   height: 115px;
+  @include sm {
+    background-size: 35% 125%;
+  }
   @include lg {
-    background-size: 35% 100%;
+    background-size: 35% 160%;
+    background-position-y: 5px;
   }
   @include xxl {
-    background-size: 20% 100%;
+    background-size: contain;
+    background-position-y: 5px;
   }
 }
-  
+
+//.wave{
+//  text-align: center;
+//  background: linear-gradient(to bottom, sandybrown, chocolate);
+//  height: 150px;
+//  position: relative;
+//}
+//.wave::before{
+//  content: "";
+//  position: absolute;
+//  left: 0;
+//  bottom: 0;
+//  right: 0;
+//  background-repeat: repeat-x;
+//  height: 78px;
+//  background-size: 263px 87px;
+//  background-image: radial-gradient(circle at 84px -8px,transparent 80px,#fff 43px);
+//}
+//.wave::after{
+//  content: "";
+//  position: absolute;
+//  left: 0;
+//  bottom: 0;
+//  right: 0;
+//  background-repeat: repeat-x;
+//  height: 78px;
+//  background-size: 263px 87px;
+//  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+//}

@@ -3,7 +3,10 @@
   background-color: $backgroundShopCannabis;
   position: relative;
   z-index: 1;
-
+.r{
+  display: flex;
+  width: 500px;
+}
 
   &__content {
     display: flex;

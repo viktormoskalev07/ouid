@@ -62,13 +62,11 @@
 
 
 <main class="main hero--bg">
-  <div class="container">
     @@include('./html-templates/hero.html',{
     title:"Proudly serving the</br>Ottawa area!",
     text:"Tell people about what you, your expertise and experience. Think about what you would want to see on this page if you were looking at an about page.",
     textBtn:"Shop Online",
     })
-  </div>
 
   <section class="by-category">
   @@include('./html-templates/cannabis-by-category.html',{
@@ -150,6 +148,12 @@
   days2_3:"SUN",
   time1_3:"10:00–21:00",
   time2_3:"11:00–18:00",
+  })
+
+  @@include('./html-templates/wholesale-portal.html',{
+  title:"Wholesale Portal",
+  text:"Whether you own a store, supply products to the trade or are a designer looking to place a non-stocking order, our sales team will be happy to assist you.",
+  textBtn:"Go to wholesale",
   })
 
   @@include('./html-templates/blog-grid.html',{})
