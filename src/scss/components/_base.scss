@@ -1,3 +1,10 @@
+// --------------header--------------
+$headerBackgroundColor: var(--headerBackgroundColor, white);
+$headerLinkDecarationColor: var(--headerLinkDecarationColor, black);
+$headerShadowFocus: var(--headerShadowFocus, rgba(0, 0, 0, 0.5));
+$headerBtnColor: var(--headerBtnColor, white);
+$headerBtnBg: var(--headerBtnBg, black);
+
 //_________________Hero______________________
 // background
 $backgroundHero: var(--backgroundHero, black);
@@ -63,7 +70,6 @@ $footerColorBg1: var(--footerColorBg1, black);
 $footerColorBg2: var(--footerColorBg2, orange);
 $footerFormShadowFocus: var(--footerFormShadowFocus, rgba(0, 0, 0, 0.5));
 
-$logowidth:1px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
@@ -96,8 +102,8 @@ $xxl: 1400px;
 };
   
 body{
-  background-color: rgb(199, 199, 199);
   // for popup noscroll 
+  background-color: $headerBackgroundColor;
 }
 
 // footer to bottom
@@ -118,13 +124,16 @@ min-height: 100vh;
   flex-direction: column;
   z-index: 0;
   position: relative;
-  background-color: #fff;
+  background-color: $headerBackgroundColor;
   overflow: hidden;
- 
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html , body{
@@ -134,7 +143,6 @@ html , body{
   font-size: $font-base;
   color: $clr-text-main;
 }
-
 
 a {
   text-decoration: none;
@@ -169,5 +177,3 @@ img {
   }
 }
   
- 
- 
