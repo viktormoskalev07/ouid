@@ -10,12 +10,6 @@
     }
   }
 
-  @include lg {
-    .swiper-slide-duplicate, {
-      display: none;
-    }
-  }
-
   &__content {
     padding-top: 150px;;
     display: flex;
