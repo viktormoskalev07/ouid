@@ -87,6 +87,13 @@ $footerFormShadowFocus: var(--footerFormShadowFocus, rgba(0, 0, 0, 0.5));
 
 // blog article page
 $blogPageHeroTitleColor: var(--blogPageHeroTitleColor, white);
+$blogPageHeroBtnColor: var(--blogPageHeroBtnColor, black);
+$blogPageHeroBtnBg: var(--blogPageHeroBtnBg, white);
+$blogPageHeroBtnShadow: var(--blogPageHeroBtnShadow, rgba(255, 255, 255, 0.5));
+$blogPageContentTextColor: var(--blogPageContentTextColor, black);
+$blogPageContentBtnColor: var(--blogPageContentBtnColor, white);
+$blogPageContentBtnBg: var(--blogPageContentBtnBg, black);
+$blogPageContentBtnShadow: var(--blogPageContentBtnShadow, rgba(0, 0, 0, 0.5));
 
 $sm: 576px;
 $md: 768px;

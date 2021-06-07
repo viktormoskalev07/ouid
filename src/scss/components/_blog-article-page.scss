@@ -5,9 +5,56 @@
     padding: 0 20px;
   }
 
+  &__button {
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: 12px 35px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      transition: .3s;
+
+      svg {transition: .3s}
+    }
+  }
+
   &__hero {
     padding: 150px 0;
     position: relative;
+
+    &-title {
+      text-align: center;
+      z-index: 2;
+      color: $blogPageHeroTitleColor;
+  
+      h1 {
+        @include md {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &-button {
+      margin-top: 60px;
+      a {
+        padding: 20px 35px;
+        font-size: 1.125rem;
+        font-weight: 700;
+        background-color: $blogPageHeroBtnBg;
+        color: $blogPageHeroBtnColor;
+
+        svg {
+          margin-left: 15px;
+          fill: $blogPageHeroBtnColor;
+        }
+
+        &:hover {
+          box-shadow: 0 0 8px 2px $blogPageHeroBtnShadow;
+        }
+      }
+    }
 
     figure {
       position: absolute;
@@ -38,19 +85,9 @@
     }
   }
 
-  &__title {
-    text-align: center;
-    z-index: 2;
-    color: $blogPageHeroTitleColor;
-
-    h1 {
-      @include md {
-        font-size: 3rem;
-      }
-    }
-  }
-
   &__content {
+    color: $blogPageContentTextColor;
+
     h4 {
       font-size: 1.125rem;
 
@@ -71,6 +108,33 @@
       img {
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+
+  &__bottom-button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    a {
+      background-color: $blogPageContentBtnBg;
+      color: $blogPageContentBtnColor;
+
+      svg {
+        margin-right: 10px;
+        transform: rotate(90deg);
+
+        path {
+          stroke: $blogPageContentBtnColor;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 0 8px 2px $blogPageContentBtnShadow;
+
+        svg {
+          transform: rotate(90deg) translateY(3px);
+        }
       }
     }
   }
