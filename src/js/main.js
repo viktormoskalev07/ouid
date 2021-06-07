@@ -242,7 +242,10 @@ const swiper = new Swiper(".swiper-categories", {
 
 const swiperAccessories = new Swiper(".swiper-accessories", {
     slidesPerView: 1,
-    // loop: true,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
     spaceBetween: 10,
     navigation: {
         nextEl: '.swiper-button-next-accessories',
@@ -256,6 +259,10 @@ const swiperAccessories = new Swiper(".swiper-accessories", {
         576: {
             slidesPerView: 2,
             spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 50,
         },
     },
 });

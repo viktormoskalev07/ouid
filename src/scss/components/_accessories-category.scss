@@ -9,6 +9,11 @@
       display: none;
     }
   }
+  @include lg {
+    .swiper-slide-duplicate, {
+      display: none;
+    }
+  }
 
   &__content {
     padding-top: 150px;;
@@ -40,7 +45,7 @@
     padding-bottom: 20px;
     @include lg {
       padding-bottom: 5px;
-      min-width: 250px;
+      min-width: 200px;
     }
 
   }
