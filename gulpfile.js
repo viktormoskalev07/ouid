@@ -64,20 +64,20 @@ gulp.task('js:build', async function () {
   gulp.src(path.src.js) //Найдем наш main файл
       // .pipe(rigger()) //Прогоним через rigger
       .pipe(fileinclude()) //Прогоним через fileinclude
-      // .pipe(sourcemaps.init()) //Инициализируем sourcemap
+      .pipe(sourcemaps.init()) //Инициализируем sourcemap
       .pipe(terser()) //Сожмем наш js 
-      // .pipe(sourcemaps.write()) //Пропишем карты
+      .pipe(sourcemaps.write()) //Пропишем карты
       .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
       .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
 gulp.task('style:build', async function () {
     gulp.src(path.src.style) //Выберем наш main.scss
-        // .pipe(sourcemaps.init()) //То же самое что и с js
+        .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(sass().on('error', sass.logError)) //Скомпилируем
         .pipe(prefixer('last 2 versions')) //Добавим вендорные префиксы
         .pipe(cssmin()) //Сожмем
-        // .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css)) //И в build
         .pipe(reload({stream: true}));
 });

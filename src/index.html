@@ -1,74 +1,19 @@
-<!DOCTYPE html>
-<html lang="ru">
+@@include('./html-templates/head.html')
 
-<head>
-  <meta charset="UTF-8">
-  <title>Amazing page</title>
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+@@include('./html-templates/header.html')
 
-  <style>
-    /* styling page */
-    :root {
-      /* -------header------- */
-      --headerBackgroundColor: #eae1cd;
-      --headerLinkDecarationColor: #172A2E;
-      --headerShadowFocus: rgba(0, 0, 0, 0.5);
-      --headerBtnColor: #ffffff;
-      --headerBtnBg: #172A2E;
-      
-      /* -------hero------- */
-      --backgroundHero: #172A2E;
-      --heroText: #EAE1CD;
-      --btnShop: #EAE1CD;
+<!-- @@include('./html-templates/_theme_settings.html') -->
 
-      /* ---shop by category--- */
-      --backgroundShopCannabis: #D7A461;
-      --ShopCannabisTitle: #EAE1CD;
-      --ShopCannabisText: #172A2E;
-      --ShopCannabisBtn: #172A2E;
-      --ShopCannabisBtnText: #FFFFFF;
 
-      /* ---shop accessories--- */
-      --backgroundAccessories: #172A2E;
-      --ShopAccessoriesTitle: #EAE1CD;
-      --ShopAccessoriesText: #FDFAF3;
-      --ShopAccessoriesBtn: #EAE1CD;
-      --ShopAccessoriesBtnText: #172A2E;
-
-      /* -----grid blog----- */
-      --blogColorBg1: #EDE5D1;
-      --blogColorBg2: #FDFAF3;
-
-      /* ----text-colors---- */
-      --clr-light: #ffffff;
-      --clr-text-main: #333333;
-      --clr-text-accent: #d7a461;
-      --font-base: 18px;
-
-      /* -------footer------- */
-      --footerColorBg1: #182a2d;
-      --footerColorBg2: #D7A461;
-      --footerFormShadowFocus: rgba(0, 0, 0, 0.5);
-    }
-  </style>
-</head>
-
-<body class="body">
-<div class="main-wrapper">
-  @@include('./html-templates/header.html',{
+<div class="container">
+  @@include('./html-templates/hero.html',{
+  title:"Proudly serving the</br>Ottawa area!",
+  text:"Tell people about what you, your expertise and experience. Think about what you would want to see on this page if you were looking at an about page.",
+  textBtn:"Shop Online",
   })
+</div>
 
-
-<main class="main hero--bg">
-    @@include('./html-templates/hero.html',{
-    title:"Proudly serving the</br>Ottawa area!",
-    text:"Tell people about what you, your expertise and experience. Think about what you would want to see on this page if you were looking at an about page.",
-    textBtn:"Shop Online",
-    })
-
-  <section class="by-category">
+<section class="by-category">
   @@include('./html-templates/cannabis-by-category.html',{
   bgColor:"#D7A461",
   title:"Shop Cannabis by category",
@@ -99,84 +44,74 @@
   bgExtractsAlt:"bgExtracts",
   nameExtracts:"Extracts",
   })
-  </section>
+</section>
 
-  <section class="accessories-category">
-    @@include('./html-templates/accessories-category.html',{
-    bgColorWaveTop:"#D7A461",
-    bgColorWaveDown:"#172A2E",
-    title:"Shop Accessories by category",
-    imgMerch:"images/accessoriesCategory/Merch.png",
-    altMerch:"Merch",
-    bgMerch:"images/accessoriesCategory/MerchBg.svg",
-    bgMerchAlt:"BgMerch",
-    nameMerch:"Merch",
-    btn:"SHOP NOW",
-    imgTools:"images/accessoriesCategory/Tools.png",
-    altTools:"Tools",
-    bgTools:"images/accessoriesCategory/ToolsBg.svg",
-    bgToolsAlt:"BgTools",
-    nameTools:"Tools",
-    imgConsuption:"images/accessoriesCategory/Consuption.png",
-    altConsuption:"Consuption",
-    bgConsuption:"images/accessoriesCategory/ConsuptionBg.svg",
-    bgConsuptionAlt:"bgConsuption",
-    nameConsuption:"Consuption",
-    })
-  </section>
-
-  @@include('./html-templates/location.html',{
-  bgColorWaveTop:"#172A2E",
-  imgBg:"images/locationBg.jpg",
-  imgBgAlt:"store",
-  title:"34 Highbury Park Dr",
-  subTitle:"Nepean, ON K2J 5C6",
-  days1:"Mon-SAT",
-  days2:"SUN",
-  time1:"10:00–21:00",
-  time2:"11:00–18:00",
-  btn:"GET DIRECTION",
-  title2:"5754 Hazeldean Rd A3",
-  subTitle2:"Stittsville, ON K2S 1T1",
-  days1_2:"Mon-SAT",
-  days2_2:"SUN",
-  time1_2:"10:00–21:00",
-  time2_2:"11:00–18:00",
-  title3:"3 Stittsville Main St",
-  subTitle3:"Stittsville, ON K2S 0H7",
-  days1_3:"Mon-SAT",
-  days2_3:"SUN",
-  time1_3:"10:00–21:00",
-  time2_3:"11:00–18:00",
+<section class="accessories-category">
+  @@include('./html-templates/accessories-category.html',{
+  bgColorWaveTop:"#D7A461",
+  bgColorWaveDown:"#172A2E",
+  title:"Shop Accessories by category",
+  imgMerch:"images/accessoriesCategory/Merch.png",
+  altMerch:"Merch",
+  bgMerch:"images/accessoriesCategory/MerchBg.svg",
+  bgMerchAlt:"BgMerch",
+  nameMerch:"Merch",
+  btn:"SHOP NOW",
+  imgTools:"images/accessoriesCategory/Tools.png",
+  altTools:"Tools",
+  bgTools:"images/accessoriesCategory/ToolsBg.svg",
+  bgToolsAlt:"BgTools",
+  nameTools:"Tools",
+  imgConsuption:"images/accessoriesCategory/Consuption.png",
+  altConsuption:"Consuption",
+  bgConsuption:"images/accessoriesCategory/ConsuptionBg.svg",
+  bgConsuptionAlt:"bgConsuption",
+  nameConsuption:"Consuption",
   })
+</section>
 
-  @@include('./html-templates/wholesale-portal.html',{
-  title:"Wholesale Portal",
-  text:"Whether you own a store, supply products to the trade or are a designer looking to place a non-stocking order, our sales team will be happy to assist you.",
-  textBtn:"Go to wholesale",
-  })
+@@include('./html-templates/location.html',{
+bgColorWaveTop:"#172A2E",
+imgBg:"images/locationBg.jpg",
+imgBgAlt:"store",
+title:"34 Highbury Park Dr",
+subTitle:"Nepean, ON K2J 5C6",
+days1:"Mon-SAT",
+days2:"SUN",
+time1:"10:00–21:00",
+time2:"11:00–18:00",
+btn:"GET DIRECTION",
+title2:"5754 Hazeldean Rd A3",
+subTitle2:"Stittsville, ON K2S 1T1",
+days1_2:"Mon-SAT",
+days2_2:"SUN",
+time1_2:"10:00–21:00",
+time2_2:"11:00–18:00",
+title3:"3 Stittsville Main St",
+subTitle3:"Stittsville, ON K2S 0H7",
+days1_3:"Mon-SAT",
+days2_3:"SUN",
+time1_3:"10:00–21:00",
+time2_3:"11:00–18:00",
+})
 
-  @@include('./html-templates/blog-grid.html',{
-  })
+@@include('./html-templates/wholesale-portal.html',{
+title:"Wholesale Portal",
+text:"Whether you own a store, supply products to the trade or are a designer looking to place a non-stocking order, our sales team will be happy to assist you.",
+textBtn:"Go to wholesale",
+})
 
-  @@include('./html-templates/accordion_FAQ’s.html',{})
+@@include('./html-templates/blog-grid.html',{})
 
-  <!-- instagram post embed -->
-  <!-- <div class="instagram__container" id="instagam-cont"></div> -->
-  
+@@include('./html-templates/accordion_FAQ’s.html',{})
 
-</main>
+<!-- instagram post embed -->
+<!-- <div class="instagram__container" id="instagam-cont"></div> -->
+
+<!--    @@include('./accordion_test.html',{-->
+<!--  })-->
+
 
 
 @@include('./html-templates/footer.html',{
 })
-
-
-
-
-<script src="js/swiper-bundle.js"> </script>
-<script src="js/main.js"> </script>
-<script src="js/fetch-inst.js"></script>
-</body>
-
-</html>

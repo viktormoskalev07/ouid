@@ -1,0 +1,35 @@
+<section>
+    <div class="container"> 
+        <div class="colors-settings">
+                <textarea  id='colors-settings'  ></textarea>
+        </div>
+
+    </div>
+
+
+
+
+    <script> 
+            const styles = document.querySelector('.styles-var');
+            const test = styles.style.getPropertyValue('--backgroundHero');
+            const colorSettings= document.getElementById('colors-settings')
+            colorSettings.value=styles.innerHTML  ;
+            colorSettings.addEventListener('input' , ()=>{
+                styles.innerHTML=colorSettings.value;
+            } )
+            styles.style.setProperty(' --backgroundHero', 'red');
+            styles.style.setProperty(' --backgroundHero', 'red');
+    </script>
+
+
+
+</section>
+
+<style>
+    #colors-settings{
+        position: fixed;
+        z-index: 33333;
+        min-height: 200px;
+        width: 100%;
+    }
+</style>
