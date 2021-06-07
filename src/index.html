@@ -1,79 +1,18 @@
-<!DOCTYPE html>
-<html lang="ru">
+ 
+  @@include('./html-templates/head.html') 
 
-<head>
-  <meta charset="UTF-8">
-  <title>Amazing page</title>
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-
-  <style class='styles-var'>
-    /* styling page */
-    :root {
-      /* -------header------- */
-      --headerBackgroundColor: #eae1cd;
-      --headerLinkDecarationColor: #172A2E;
-      --headerShadowFocus: rgba(0, 0, 0, 0.5);
-      --headerBtnColor: #ffffff;
-      --headerBtnBg: #172A2E;
-      
-      /* -------hero------- */
-      --backgroundHero: #172A2E;
-      --heroText: #EAE1CD;
-      --btnShop: #EAE1CD;
-
-      /* ---shop by category--- */
-      --backgroundShopCannabis: #D7A461;
-      --ShopCannabisTitle: #EAE1CD;
-      --ShopCannabisText: #172A2E;
-      --ShopCannabisBtn: #172A2E;
-      --ShopCannabisBtnText: #FFFFFF;
-
-      /* ---shop accessories--- */
-      --backgroundAccessories: #172A2E;
-      --ShopAccessoriesTitle: #EAE1CD;
-      --ShopAccessoriesText: #FDFAF3;
-      --ShopAccessoriesBtn: #EAE1CD;
-      --ShopAccessoriesBtnText: #172A2E;
-
-      /* -----grid blog----- */
-      --blogColorBg1: #EDE5D1;
-      --blogColorBg2: #FDFAF3;
-
-      /* ----text-colors---- */
-      --clr-light: #ffffff;
-      --clr-text-main: #333333;
-      --clr-text-accent: #d7a461;
-      --font-base: 18px;
-
-      /* -------footer------- */
-      --footerColorBg1: #182a2d;
-      --footerColorBg2: #D7A461;
-      --footerFormShadowFocus: rgba(0, 0, 0, 0.5);
-    }
-  </style>
-</head>
-
-<body class="body">
-<div class="main-wrapper">
   @@include('./html-templates/header.html') 
  
-  @@include('./html-templates/_theme_settings.html')
+  <!-- @@include('./html-templates/_theme_settings.html') -->
 
-<main class="main hero--bg">
+
   <div class="container">
     @@include('./html-templates/hero.html',{
     title:"Proudly serving the</br>Ottawa area!",
     text:"Tell people about what you, your expertise and experience. Think about what you would want to see on this page if you were looking at an about page.",
     textBtn:"Shop Online",
     })
-  </div>
-
-
-
-
-
+  </div> 
 
   <section class="by-category">
   @@include('./html-templates/cannabis-by-category.html',{
@@ -164,18 +103,9 @@
   
   <!--    @@include('./accordion_test.html',{-->
   <!--  })-->
-</main>
+
 
 
 @@include('./html-templates/footer.html',{
 })
 
-
-
-
-<script src="js/swiper-bundle.js"> </script>
-<script src="js/main.js"> </script>
-<script src="js/fetch-inst.js"></script>
-</body>
-
-</html>
