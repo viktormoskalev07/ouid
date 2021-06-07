@@ -14,8 +14,16 @@
 
   &__bg {
     width: 100%;
+    height: 30vh;
+    @include lg {
+      height: 45vh;
+    }
+    @include xxl {
+      height: 50vh;
+    }
 
     img {
+      object-fit: cover;
       width: 100%;
     }
   }
@@ -120,7 +128,7 @@
     transition: all .5s ease;
 
     &:hover {
-      box-shadow:$locationShadowFocus;
+      box-shadow: $locationShadowFocus;
     }
   }
 }
