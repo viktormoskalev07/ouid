@@ -147,7 +147,7 @@ function accordionInit () {
 		const items = accordion.querySelectorAll(".accordion__item");
 	
 		items.forEach((item) => {
-			const title = item.querySelector(".accordion__title");
+			const title = item.querySelector(".accordion__title-text");
 	
 			title.addEventListener("click", (e) => {
 				const opened_item = accordion.querySelector(".is-open");
