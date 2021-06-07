@@ -6,11 +6,16 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    color: #172A2E;
+    color: $ShopCannabisArrows;
     @include xl {
-     display: none;
+      display: none;
     }
+  }
 
+  @include xl {
+    .swiper-slide-duplicate, {
+      display: none;
+    }
   }
 
   &__content {

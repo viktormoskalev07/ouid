@@ -211,6 +211,10 @@ try {
 
 const swiper = new Swiper(".swiper-categories", {
     slidesPerView: 1,
+    autoplay: {
+        delay: 5000,
+    },
+    loop: true,
     spaceBetween: 10,
     navigation: {
         nextEl: '.swiper-button-next',
@@ -238,7 +242,12 @@ const swiper = new Swiper(".swiper-categories", {
 
 const swiperAccessories = new Swiper(".swiper-accessories", {
     slidesPerView: 1,
+    // loop: true,
     spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next-accessories',
+        prevEl: '.swiper-button-prev-accessories',
+    },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -247,10 +256,6 @@ const swiperAccessories = new Swiper(".swiper-accessories", {
         576: {
             slidesPerView: 2,
             spaceBetween: 30,
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 40,
         },
     },
 });

@@ -2,6 +2,14 @@
   position: relative;
   background-color: $backgroundAccessories;
 
+  .swiper-button-prev-accessories,
+  .swiper-button-next-accessories {
+    color: $ShopAccessoriesArrows;
+    @include lg {
+      display: none;
+    }
+  }
+
   &__content {
     padding-top: 150px;;
     display: flex;
