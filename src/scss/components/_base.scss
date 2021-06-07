@@ -13,6 +13,7 @@ $heroText: var(--heroText, white);
 //btn
 $btnShop: var(--btnShop, white);
 $btnShopText: var(--btnShopText, white);
+$heroShadowFocus: var(--heroShadowFocus, white);
 //_______________________________________________
 
 //______________Shop Cannabis by category_______________________________________
@@ -25,6 +26,7 @@ $ShopCannabisText: var(--ShopCannabisText, black);
 //btn
 $ShopCannabisBtn: var(--ShopCannabisBtn, white);
 $ShopCannabisBtnText: var(--ShopCannabisBtnText, black);
+$ShopCannabisShadowFocus: var(--ShopCannabisShadowFocus, black);
 //arrows
 $ShopCannabisArrows:var(--ShopCannabisArrows, black);
 //________________________________________________________________________________
@@ -38,44 +40,47 @@ $ShopAccessoriesText: var(--ShopAccessoriesText, white);
 //btn
 $ShopAccessoriesBtn: var(--ShopAccessoriesBtn, white);
 $ShopAccessoriesBtnText: var(--ShopAccessoriesBtnText, black);
+$ShopAccessoriesShadowFocus: var(--ShopAccessoriesShadowFocus, black);
 //arrows
-$ShopAccessoriesArrows:var(--ShopAccessoriesArrows, black);
+$ShopAccessoriesArrows:var(--ShopAccessoriesArrows, white);
 //________________________________________________________________________________
 
 //_______________Location_________________________________________________________
 // background
-$backgroundLocation: #EDE5D1;
-$backgroundLocationCards: #FDFAF3;
+$backgroundLocation: var(--backgroundLocation, white);
+$backgroundLocationCards:  var(--backgroundLocationCards, white);
 //text-color
-$locationText: #172A2E;
+$locationText: var(--locationText, black);
 //btn
-$locationBtnBg: #172A2E;
-$locationBtnText: #FFFFFF;
+$locationBtnBg: var(--locationBtnBg, black);
+$locationBtnText:var(--locationBtnText, white);
+$locationShadowFocus: var(--locationShadowFocus, black);
 //__________________________________________________________________________________
 
 //______________Wholesale Portal___________________________________________________
 // background
-$backgroundWholesale: #172A2E;
+$backgroundWholesale: var(--backgroundWholesale, black);
 //text-color
-$wholesaleText: #EAE1CD;
+$wholesaleText: var(--wholesaleText, white);
 //btn
-$wholesaleBtnBg: #EAE1CD;
-$wholesaleBtnText: #172A2E;
+$wholesaleBtnBg: var(--wholesaleBtnBg, white);
+$wholesaleBtnText: var(--wholesaleBtnText, black);
+$wholesaleShadowFocus: var(--wholesaleShadowFocus, white);
 //___________________________________________________________________________________
 
 //______________accordion_FAQ’s______________________________________________________
 // background
-$backgroundAccordion: #172A2E;
+$backgroundAccordion:var(--backgroundAccordion, black) ;
 //text-color
-$accordionTitle:#FDFAF3;
-$accordionTitleText:#FDFAF3;
-$accordionTextContent:#FDFAF3;
+$accordionTitle:var(--accordionTitle, white);
+$accordionTitleText:var(--accordionTitleText, white);
+$accordionTextContent:var(--accordionTextContent, white);
 
 //____________________________________________________________________________________
 
 //grid blog backgrounds
-$clr-bg-1: #EDE5D1;
-$clr-bg-2: #FDFAF3;
+$clr-bg-1: var(--blogColorBg1, white);
+$clr-bg-2: var(--blogColorBg2, white);
 
 //color white
 $clr-light: var(--clr-light, white);
