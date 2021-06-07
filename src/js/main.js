@@ -243,3 +243,20 @@ const swiperAccessories = new Swiper(".swiper-accessories", {
     },
   },
 });
+
+//preloader
+if(document.querySelector('.preloader')) {
+    const loader = document.querySelector('.preloader');
+    loader.style.top = document.querySelector('.header').clientHeight + 'px';
+    hidescroll()
+
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      showscroll()
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 300);
+    }
+  }
+//preloader
