@@ -78,9 +78,6 @@ $accordionTextContent:var(--accordionTextContent, white);
 
 //____________________________________________________________________________________
 
-//grid blog backgrounds
-$clr-bg-1: var(--blogColorBg1, white);
-$clr-bg-2: var(--blogColorBg2, white);
 
 //color white
 $clr-light: var(--clr-light, white);
@@ -98,6 +95,16 @@ $blogColorBg2: var(--blogColorBg2, white);
 $footerColorBg1: var(--footerColorBg1, black);
 $footerColorBg2: var(--footerColorBg2, orange);
 $footerFormShadowFocus: var(--footerFormShadowFocus, rgba(0, 0, 0, 0.5));
+
+// blog article page
+$blogPageHeroTitleColor: var(--blogPageHeroTitleColor, white);
+$blogPageHeroBtnColor: var(--blogPageHeroBtnColor, black);
+$blogPageHeroBtnBg: var(--blogPageHeroBtnBg, white);
+$blogPageHeroBtnShadow: var(--blogPageHeroBtnShadow, rgba(255, 255, 255, 0.5));
+$blogPageContentTextColor: var(--blogPageContentTextColor, black);
+$blogPageContentBtnColor: var(--blogPageContentBtnColor, white);
+$blogPageContentBtnBg: var(--blogPageContentBtnBg, black);
+$blogPageContentBtnShadow: var(--blogPageContentBtnShadow, rgba(0, 0, 0, 0.5));
 
 $sm: 576px;
 $md: 768px;
@@ -225,31 +232,3 @@ img {
   }
 }
 
-//.wave{
-//  text-align: center;
-//  background: linear-gradient(to bottom, sandybrown, chocolate);
-//  height: 150px;
-//  position: relative;
-//}
-//.wave::before{
-//  content: "";
-//  position: absolute;
-//  left: 0;
-//  bottom: 0;
-//  right: 0;
-//  background-repeat: repeat-x;
-//  height: 78px;
-//  background-size: 263px 87px;
-//  background-image: radial-gradient(circle at 84px -8px,transparent 80px,#fff 43px);
-//}
-//.wave::after{
-//  content: "";
-//  position: absolute;
-//  left: 0;
-//  bottom: 0;
-//  right: 0;
-//  background-repeat: repeat-x;
-//  height: 78px;
-//  background-size: 263px 87px;
-//  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
-//}
