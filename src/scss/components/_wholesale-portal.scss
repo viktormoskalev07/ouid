@@ -1,12 +1,9 @@
-.hero {
-  &--bg {
-    background-color: $headerBackgroundColor;
-  }
+.wholesale {
 
   &__wrapper {
     max-width: 1380px;
     width: 100%;
-    background-color: $backgroundHero;
+    background-color: $backgroundWholesale;
     position: relative;
     display: flex;
     justify-content: center;
@@ -27,7 +24,7 @@
   }
 
   &__left-container {
-    width: 40%;
+    width: 30%;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -40,13 +37,18 @@
 
   &__img-left {
     position: absolute;
+
+    @include lg {
+      top: 90px;
+    }
   }
 
   &__oval-top {
     position: absolute;
-    left: 100px;
-    top: 115px;
+    left: 65px;
+    top: 35px;
     display: none;
+
 
     @include lg {
       display: block;
@@ -55,8 +57,8 @@
 
   &__oval-centre {
     position: absolute;
-    top: 175px;
-    left: 190px;
+    top: 285px;
+    left: 300px;
     display: none;
 
     @include lg {
@@ -66,8 +68,8 @@
 
   &__oval-bottom {
     position: absolute;
-    bottom: 200px;
-    right: 80px;
+    bottom: 145px;
+    right: 42px;
     display: none;
 
     @include lg {
@@ -77,12 +79,13 @@
 
   &__img-right {
     position: absolute;
+    left: 20px;
   }
 
   &__oval-top-right {
     position: absolute;
-    left: 130px;
-    top: -120px;
+    left: 280px;
+    top: 65px;
     display: none;
 
     @include lg {
@@ -90,22 +93,13 @@
     }
   }
 
-  &__oval-top-centre {
-    position: absolute;
-    left: 175px;
-    bottom: 345px;
-    display: none;
-
-    @include lg {
-      display: block;
-    }
-  }
 
   &__oval-top-bottom {
     position: absolute;
-    bottom: 120px;
-    left: 200px;
+    bottom: 0;
     display: none;
+    width: 250px;
+    right: 0;
 
     @include lg {
       display: block;
@@ -116,10 +110,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $heroText;
+    color: $wholesaleText;
     z-index: 2;
-    padding-top: 60px;
-    padding-bottom: 200px;
+    padding-top: 30px;
+    padding-bottom: 90px;
     position: relative;
   }
 
@@ -143,7 +137,7 @@
   &__text {
     padding: 0 15px;
     width: 100%;
-    max-width: 425px;
+    max-width: 340px;
     font-weight: normal;
     font-size: 16px;
     line-height: 120%;
@@ -151,6 +145,7 @@
     text-align: center;
 
     @include lg {
+      max-width: 425px;
       font-size: 18px;
     }
   }
@@ -168,12 +163,13 @@
   }
 
   &__button {
+    color: $wholesaleBtnText;
     font-weight: bold;
     font-size: 16px;
     line-height: 100%;
-    background-color: $btnShop;
-    padding: 20px 30px;
+    background-color: $wholesaleBtnBg;
     border: none;
+    padding: 15px;
     border-radius: 5px;
     transition: all .5s ease;
 
@@ -183,11 +179,9 @@
 
     @include lg {
       font-size: 25px;
+      padding: 20px 30px;
     }
 
-    &:after {
-      content: url("/images/hero/card.svg");
-    }
   }
 
   img {
