@@ -212,6 +212,10 @@ try {
 const swiper = new Swiper(".swiper-categories", {
     slidesPerView: 1,
     spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -222,10 +226,11 @@ const swiper = new Swiper(".swiper-categories", {
             spaceBetween: 30,
         },
         992: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 40,
         },
         1170: {
+            slidesPerView: 3,
             spaceBetween: 50,
         },
     },

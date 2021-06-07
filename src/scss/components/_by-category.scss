@@ -4,6 +4,15 @@
   position: relative;
   z-index: 1;
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #172A2E;
+    @include xl {
+     display: none;
+    }
+
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
