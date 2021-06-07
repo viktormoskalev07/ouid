@@ -1,9 +1,15 @@
 .footer {
-  display: flex;
-  flex-direction: column;
 
   @include md {
-    flex-direction: row;
+    background: $footerColorBg1;
+    background: linear-gradient(90deg, $footerColorBg1 0%, $footerColorBg1 50%, $footerColorBg2 50%, $footerColorBg2 100%);
+  }
+  @include xxl {
+    position: relative;
+  }
+
+  .container {
+    padding: 0;
   }
 
   &__links {
@@ -13,7 +19,6 @@
 
     @include md {
       order: 1;
-      flex: 0 0 40%;
     }
 
     .footer-links {
@@ -66,6 +71,10 @@
         }
       }
 
+      &__nav {
+        li a {font-weight: 700;}
+      }
+
       &__contact {
         @include sm {
           margin-left: auto;
@@ -112,7 +121,6 @@
 
     @include md {
       order: 2;
-      flex: 0 0 60%;
     }
 
     .footer-form {
@@ -133,6 +141,7 @@
         margin: 20px 0;
         font-size: 1.5rem;
         font-weight: 700;
+        text-align: center;
 
         @include md {
           text-align: left;
@@ -140,7 +149,6 @@
         }
       }
 
-      // subscribe form
       &__submit {
         margin-top: 30px;
 
@@ -194,6 +202,17 @@
           }
         }
       }
+    }
+  }
+
+  &__bg-img {
+    display: none;
+
+    @include xxl {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }
 }
