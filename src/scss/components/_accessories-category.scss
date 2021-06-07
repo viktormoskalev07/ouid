@@ -2,6 +2,20 @@
   position: relative;
   background-color: $backgroundAccessories;
 
+  .swiper-button-prev-accessories,
+  .swiper-button-next-accessories {
+    color: $ShopAccessoriesArrows;
+    @include lg {
+      display: none;
+    }
+  }
+
+  @include lg {
+    .swiper-slide-duplicate, {
+      display: none;
+    }
+  }
+
   &__content {
     padding-top: 150px;;
     display: flex;
@@ -32,7 +46,7 @@
     padding-bottom: 20px;
     @include lg {
       padding-bottom: 5px;
-      min-width: 250px;
+      min-width: 200px;
     }
 
   }
@@ -65,7 +79,7 @@
     transition: all .5s ease;
 
     &:hover {
-      box-shadow: 1px 1px 10px 0 #d7a461;;
+      box-shadow: $ShopAccessoriesArrows;
     }
   }
 
@@ -118,7 +132,7 @@
     transition: all .5s ease;
 
     &:hover {
-      box-shadow: 1px 1px 10px 0 rgb(1, 8, 12);
+      box-shadow: $ShopAccessoriesShadowFocus;
     }
   }
 }

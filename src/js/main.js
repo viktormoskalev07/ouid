@@ -183,7 +183,7 @@ function dropdown() {
       drop.classList.toggle("dropdown_open");
     });
   }
-  
+
   if (innerWidth > 992) {
     dropBody.addEventListener('mouseenter', function() {
       drop.classList.add('on-mouse-over')
@@ -203,43 +203,89 @@ try {
 
 //swiper
 
-const swiper = new Swiper(".swiper-categories", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-    1170: {
-      spaceBetween: 50,
-    },
-  },
+
+let swiper = Swiper;
+let init = false;
+
+
+function swiperMode() {
+    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1200px)');
+    let desktop = window.matchMedia('(min-width: 1201px) and (max-width: 4000px)');
+
+    if (mobile.matches) {
+        if (!init) {
+            init = true;
+            swiper = new Swiper(".swiper-categories", {
+                slidesPerView: 1,
+                autoplay: {
+                    delay: 5000,
+                },
+                loop: true,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    1170: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                },
+            });
+        }
+
+    } else if (desktop.matches) {
+        console.log(init);
+        init && swiper.destroy();
+        init = false;
+    }
+}
+
+window.addEventListener('load', function () {
+    swiperMode();
 });
 
+window.addEventListener('resize', function () {
+    swiperMode();
+});
+
+
 const swiperAccessories = new Swiper(".swiper-accessories", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 5000,
     },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 30,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next-accessories',
+        prevEl: '.swiper-button-prev-accessories',
     },
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 40,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
     },
-  },
 });

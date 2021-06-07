@@ -12,6 +12,8 @@ $backgroundHero: var(--backgroundHero, black);
 $heroText: var(--heroText, white);
 //btn
 $btnShop: var(--btnShop, white);
+$btnShopText: var(--btnShopText, white);
+$heroShadowFocus: var(--heroShadowFocus, white);
 //_______________________________________________
 
 //______________Shop Cannabis by category_______________________________________
@@ -24,6 +26,9 @@ $ShopCannabisText: var(--ShopCannabisText, black);
 //btn
 $ShopCannabisBtn: var(--ShopCannabisBtn, white);
 $ShopCannabisBtnText: var(--ShopCannabisBtnText, black);
+$ShopCannabisShadowFocus: var(--ShopCannabisShadowFocus, black);
+//arrows
+$ShopCannabisArrows:var(--ShopCannabisArrows, black);
 //________________________________________________________________________________
 
 //________________Shop Accessories by category____________________________________
@@ -35,38 +40,44 @@ $ShopAccessoriesText: var(--ShopAccessoriesText, white);
 //btn
 $ShopAccessoriesBtn: var(--ShopAccessoriesBtn, white);
 $ShopAccessoriesBtnText: var(--ShopAccessoriesBtnText, black);
+$ShopAccessoriesShadowFocus: var(--ShopAccessoriesShadowFocus, black);
+//arrows
+$ShopAccessoriesArrows:var(--ShopAccessoriesArrows, white);
 //________________________________________________________________________________
 
 //_______________Location_________________________________________________________
 // background
-$backgroundLocation: #EDE5D1;
-$backgroundLocationCards: #FDFAF3;
+$backgroundLocation: var(--backgroundLocation, white);
+$backgroundLocationCards:  var(--backgroundLocationCards, white);
 //text-color
-$locationText: #172A2E;
+$locationText: var(--locationText, black);
 //btn
-$locationBtnBg: #172A2E;
-$locationBtnText: #FFFFFF;
+$locationBtnBg: var(--locationBtnBg, black);
+$locationBtnText:var(--locationBtnText, white);
+$locationShadowFocus: var(--locationShadowFocus, black);
 //__________________________________________________________________________________
 
 //______________Wholesale Portal___________________________________________________
 // background
-$backgroundWholesale: #172A2E;
+$backgroundWholesale: var(--backgroundWholesale, black);
 //text-color
-$wholesaleText: #EAE1CD;
+$wholesaleText: var(--wholesaleText, white);
 //btn
-$wholesaleBtnBg: #EAE1CD;
-$wholesaleBtnText: #172A2E;
+$wholesaleBtnBg: var(--wholesaleBtnBg, white);
+$wholesaleBtnText: var(--wholesaleBtnText, black);
+$wholesaleShadowFocus: var(--wholesaleShadowFocus, white);
 //___________________________________________________________________________________
 
 //______________accordion_FAQ’s______________________________________________________
 // background
-$backgroundAccordion: #172A2E;
+$backgroundAccordion:var(--backgroundAccordion, black) ;
 //text-color
-$accordionTitle:#FDFAF3;
-$accordionTitleText:#FDFAF3;
-$accordionTextContent:#FDFAF3;
+$accordionTitle:var(--accordionTitle, white);
+$accordionTitleText:var(--accordionTitleText, white);
+$accordionTextContent:var(--accordionTextContent, white);
 
 //____________________________________________________________________________________
+
 
 //color white
 $clr-light: var(--clr-light, white);
@@ -221,31 +232,3 @@ img {
   }
 }
 
-//.wave{
-//  text-align: center;
-//  background: linear-gradient(to bottom, sandybrown, chocolate);
-//  height: 150px;
-//  position: relative;
-//}
-//.wave::before{
-//  content: "";
-//  position: absolute;
-//  left: 0;
-//  bottom: 0;
-//  right: 0;
-//  background-repeat: repeat-x;
-//  height: 78px;
-//  background-size: 263px 87px;
-//  background-image: radial-gradient(circle at 84px -8px,transparent 80px,#fff 43px);
-//}
-//.wave::after{
-//  content: "";
-//  position: absolute;
-//  left: 0;
-//  bottom: 0;
-//  right: 0;
-//  background-repeat: repeat-x;
-//  height: 78px;
-//  background-size: 263px 87px;
-//  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
-//}
