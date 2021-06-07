@@ -202,90 +202,116 @@ try {
 //dropdown
 
 //swiper
+(function () {
+    let swiper = Swiper;
+    let init = false;
 
+    function swiperMode() {
+        let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1200px)');
+        let desktop = window.matchMedia('(min-width: 1201px) and (max-width: 4000px)');
 
-let swiper = Swiper;
-let init = false;
-
-
-function swiperMode() {
-    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1200px)');
-    let desktop = window.matchMedia('(min-width: 1201px) and (max-width: 4000px)');
-
-    if (mobile.matches) {
-        if (!init) {
-            init = true;
-            swiper = new Swiper(".swiper-categories", {
-                slidesPerView: 1,
-                autoplay: {
-                    delay: 5000,
-                },
-                loop: true,
-                spaceBetween: 10,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
+        if (mobile.matches) {
+            if (!init) {
+                init = true;
+                swiper = new Swiper(".swiper-categories", {
+                    slidesPerView: 1,
+                    autoplay: {
+                        delay: 3000,
                     },
-                    576: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
+                    loop: true,
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
                     },
-                    992: {
-                        slidesPerView: 3,
-                        spaceBetween: 40,
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        700: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                        1170: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
                     },
-                    1170: {
-                        slidesPerView: 3,
-                        spaceBetween: 50,
-                    },
-                },
-            });
+                });
+            }
+
+        } else if (desktop.matches) {
+            init && swiper.destroy();
+            init = false;
         }
-
-    } else if (desktop.matches) {
-        console.log(init);
-        init && swiper.destroy();
-        init = false;
     }
-}
 
-window.addEventListener('load', function () {
-    swiperMode();
-});
+    window.addEventListener('load', function () {
+        swiperMode();
+    });
 
-window.addEventListener('resize', function () {
-    swiperMode();
-});
+    window.addEventListener('resize', function () {
+        swiperMode();
+    });
+}());
 
 
-const swiperAccessories = new Swiper(".swiper-accessories", {
-    slidesPerView: 1,
-    loop: true,
-    autoplay: {
-        delay: 5000,
-    },
-    spaceBetween: 10,
-    navigation: {
-        nextEl: '.swiper-button-next-accessories',
-        prevEl: '.swiper-button-prev-accessories',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        576: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-        },
-    },
-});
+(function () {
+    let swiperAccessories = Swiper;
+    let init = false;
+
+    function swiperMode() {
+        let mobile = window.matchMedia('(min-width: 0px) and (max-width: 992px)');
+        let desktop = window.matchMedia('(min-width: 993px) and (max-width: 4000px)');
+
+        if (mobile.matches) {
+            if (!init) {
+                init = true;
+                swiperAccessories = new Swiper(".swiper-accessories", {
+                    slidesPerView: 1,
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                    },
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: '.swiper-button-next-accessories',
+                        prevEl: '.swiper-button-prev-accessories',
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        700: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                    },
+                });
+            }
+
+        } else if (desktop.matches) {
+            init && swiperAccessories.destroy();
+            init = false;
+        }
+    }
+
+    window.addEventListener('load', function () {
+        swiperMode();
+    });
+
+    window.addEventListener('resize', function () {
+        swiperMode();
+    });
+}());
+
