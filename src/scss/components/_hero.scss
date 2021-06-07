@@ -176,9 +176,10 @@
     border: none;
     border-radius: 5px;
     transition: all .5s ease;
+    color: $btnShopText;
 
     &:hover {
-      box-shadow: -1px -1px 16px 0px rgb(215, 164, 97);
+      box-shadow: $heroShadowFocus;
     }
 
     @include lg {

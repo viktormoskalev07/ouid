@@ -22,6 +22,8 @@
       --backgroundHero: #172A2E;
       --heroText: #EAE1CD;
       --btnShop: #EAE1CD;
+      --btnShopText:#172A2E;
+      --heroShadowFocus:-1px -1px 16px 0px rgb(215, 164, 97);
 
       /* ---shop by category--- */
       --backgroundShopCannabis: #D7A461;
@@ -29,6 +31,8 @@
       --ShopCannabisText: #172A2E;
       --ShopCannabisBtn: #172A2E;
       --ShopCannabisBtnText: #FFFFFF;
+      --ShopCannabisArrows:#172A2E;
+      --ShopCannabisShadowFocus:1px 1px 10px 0 rgb(1, 8, 12);
 
       /* ---shop accessories--- */
       --backgroundAccessories: #172A2E;
@@ -36,6 +40,30 @@
       --ShopAccessoriesText: #FDFAF3;
       --ShopAccessoriesBtn: #EAE1CD;
       --ShopAccessoriesBtnText: #172A2E;
+      --ShopAccessoriesArrows:#D7A461;
+      --ShopAccessoriesShadowFocus:1px 1px 10px 0 #d7a461;
+
+      /*--------Location-------*/
+      --backgroundLocation:#EDE5D1;
+      --backgroundLocationCards: #FDFAF3;
+      --locationText:#172A2E;
+      --locationBtnBg: #172A2E;
+      --locationBtnText: #FFFFFF;
+      --locationShadowFocus: 1px 1px 10px 0 rgb(1, 8, 12);
+
+      /*-----Wholesale------*/
+      --backgroundWholesale:#172A2E;
+      --wholesaleText:#EAE1CD;
+      --wholesaleBtnBg:#EAE1CD;
+      --wholesaleBtnText:#172A2E;
+      --wholesaleShadowFocus:-1px -1px 16px 0px rgb(215, 164, 97);
+
+      /*--------accordion_FAQ-----*/
+      --backgroundAccordion: #172A2E;
+      --accordionTitle:#FDFAF3;
+      --accordionTitleText:#FDFAF3;
+      --accordionTextContent:#FDFAF3;
+
 
       /* -----grid blog----- */
       --blogColorBg1: #EDE5D1;
@@ -207,9 +235,9 @@
                 Proudly serving the</br>Ottawa area!
             </h1>
             <p class="hero__text">Tell people about what you, your expertise and experience. Think about what you would want to see on this page if you were looking at an about page.</p>
-            <button class="hero__button">
+            <a href="#" class="hero__button">
                 Shop Online
-            </button>
+            </a>
         </div>
     </div>
 </section>
@@ -306,6 +334,8 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </div>
@@ -370,6 +400,8 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-prev swiper-button-prev-accessories"></div>
+            <div class="swiper-button-next swiper-button-next-accessories"></div>
         </div>
     </div>
 </div>
@@ -509,9 +541,9 @@
                 Wholesale Portal
             </h1>
             <p class="wholesale__text">Whether you own a store, supply products to the trade or are a designer looking to place a non-stocking order, our sales team will be happy to assist you.</p>
-            <button class="wholesale__button">
+            <a href="#" class="wholesale__button">
                 Go to wholesale
-            </button>
+            </a>
         </div>
     </div>
 </section>
@@ -645,9 +677,6 @@
 
 <!-- instagram post embed -->
 <!-- <div class="instagram__container" id="instagam-cont"></div> -->
-
-
-<!--  })-->
 
 
 

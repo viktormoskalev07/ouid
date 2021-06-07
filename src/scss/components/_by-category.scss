@@ -4,6 +4,14 @@
   position: relative;
   z-index: 1;
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $ShopCannabisArrows;
+    @include xl {
+      display: none;
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -75,7 +83,7 @@
     transition: all .5s ease;
 
     &:hover {
-      box-shadow: 1px 1px 10px 0 rgb(1, 8, 12);
+      box-shadow: $ShopCannabisShadowFocus;
     }
   }
 
