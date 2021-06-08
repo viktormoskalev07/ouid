@@ -11,94 +11,105 @@
   <style class='styles-var'>
     /* styling page */
     :root {
+            /* -------main color------ */
+            --mainColor: #172A2E;
+            --secondColor: #EAE1CD;
+            --thirdColor: #d7a461;
+            --fourthColor: #ffffff;
+            --fifthColor: #FDFAF3;
+            --sixthwDark: rgba(0, 0, 0, 0.5); 
       /* -------header------- */
-      --headerBackgroundColor: #EAE1CD;
+      --headerBackgroundColor: var(--secondColor);
       --headerBackgroundColorOpenMenu: #06262D; /* Add new */
-      --headerTextColorOpenMenu: #FDFAF3; /* Add new */
-      --headerLinkDecarationColor: #172A2E;
-      --headerShadowFocus: rgba(0, 0, 0, 0.5);
-      --headerBtnColor: #ffffff;
-      --headerBtnBg: #172A2E;
+      --headerTextColorOpenMenu: var(--fifthColor); /* Add new */
+      --headerLinkDecarationColor: var(--mainColor);
+      --headerShadowFocus: var(--sixthwDark);
+      --headerBtnColor: var(--fourthColor);
+      --headerBtnBg: var(--mainColor);
       
       /* -------hero------- */
-      --backgroundHero: #172A2E;
-      --heroText: #EAE1CD;
-      --btnShop: #EAE1CD;
-      --btnShopText:#172A2E;
+      --backgroundHero: var(--mainColor);
+      --heroText: var(--secondColor);
+      --btnShop: var(--secondColor);
+      --btnShopText:var(--mainColor);
       --heroShadowFocus:-1px -1px 16px 0px rgb(215, 164, 97);
 
       /* ---shop by category--- */
-      --backgroundShopCannabis: #D7A461;
-      --ShopCannabisTitle: #EAE1CD;
-      --ShopCannabisText: #172A2E;
-      --ShopCannabisBtn: #172A2E;
-      --ShopCannabisBtnText: #FFFFFF;
-      --ShopCannabisArrows:#172A2E;
+      --backgroundShopCannabis: var(--thirdColor);
+      --ShopCannabisTitle: var(--secondColor);
+      --ShopCannabisText: var(--mainColor);
+      --ShopCannabisBtn: var(--mainColor);
+      --ShopCannabisBtnText: var(--fourthColor);
+      --ShopCannabisArrows:var(--mainColor);
       --ShopCannabisShadowFocus:1px 1px 10px 0 rgb(1, 8, 12);
 
       /* ---shop accessories--- */
-      --backgroundAccessories: #172A2E;
-      --ShopAccessoriesTitle: #EAE1CD;
-      --ShopAccessoriesText: #FDFAF3;
-      --ShopAccessoriesBtn: #EAE1CD;
-      --ShopAccessoriesBtnText: #172A2E;
-      --ShopAccessoriesArrows:#D7A461;
-      --ShopAccessoriesShadowFocus:1px 1px 10px 0 #d7a461;
+      --backgroundAccessories: var(--mainColor);
+      --ShopAccessoriesTitle: var(--secondColor);
+      --ShopAccessoriesText: var(--fifthColor);
+      --ShopAccessoriesBtn: var(--secondColor);
+      --ShopAccessoriesBtnText: var(--mainColor);
+      --ShopAccessoriesArrows:var(--thirdColor);
+      --ShopAccessoriesShadowFocus:1px 1px 10px 0 var(--thirdColor);
 
       /*--------Location-------*/
       --backgroundLocation:#EDE5D1;
-      --backgroundLocationCards: #FDFAF3;
-      --locationText:#172A2E;
-      --locationBtnBg: #172A2E;
-      --locationBtnText: #FFFFFF;
+      --backgroundLocationCards: var(--fifthColor);
+      --locationText:var(--mainColor);
+      --locationBtnBg: var(--mainColor);
+      --locationBtnText: var(--fourthColor);
       --locationShadowFocus: 1px 1px 10px 0 rgb(1, 8, 12);
 
       /*-----Wholesale------*/
-      --backgroundWholesale:#172A2E;
-      --wholesaleText:#EAE1CD;
-      --wholesaleBtnBg:#EAE1CD;
-      --wholesaleBtnText:#172A2E;
+      --backgroundWholesale:var(--mainColor);
+      --wholesaleText:var(--secondColor);
+      --wholesaleBtnBg:var(--secondColor);
+      --wholesaleBtnText:var(--mainColor);
       --wholesaleShadowFocus:-1px -1px 16px 0px rgb(215, 164, 97);
 
       /*--------accordion_FAQ-----*/
-      --backgroundAccordion: #172a2e;
-      --accordionTitle:#FDFAF3;
-      --accordionTitleText:#FDFAF3;
-      --accordionTextContent:#FDFAF3;
-        --accordionTitleTextFocus: #3d666f70; /*Victor, added me!!!!!!!!!!!!!!! */
+      --backgroundAccordion: var(--mainColor);
+      --accordionTitle:var(--fifthColor);
+      --accordionTitleText:var(--fifthColor);
+      --accordionTextContent:var(--fifthColor);
+        --accordionTitleTextFocus: #3d666f70; /*Victor, added me!!!!!!!!!!!!!!!
 
 
       /* -----grid blog----- */
-      --blogColorBg1: #EAE1CD;
-      --blogColorBg2: #FDFAF3;
+      --blogColorBg1: var(--secondColor);
+      --blogColorBg2: var(--fifthColor);
 
       /* ----text-colors---- */
-      --clr-light: #ffffff;
+      --clr-light: var(--fourthColor);
       --clr-text-main: #333333;
-      --clr-text-accent: #d7a461;
+      --clr-text-accent: var(--thirdColor);
       --font-base: 18px;
 
       /* -------footer------- */
       --footerColorBg1: #182a2d;
-      --footerColorBg2: #D7A461;
-      --footerFormShadowFocus: rgba(0, 0, 0, 0.5);
+      --footerColorBg2: var(--thirdColor);
+      --footerFormShadowFocus: var(--sixthwDark);
 
       /* ---------blog--------- */
-      --blogPageHeroTitleColor: #FFFFFF; /*changed*/
-      --blogPageHeroBtnColor: #172A2E;
-      --blogPageHeroBtnBg: #EAE1CD;
+      --blogPageHeroTitleColor: var(--fourthColor);
+      --blogPageHeroBtnColor: var(--mainColor);
+      --blogPageHeroBtnBg: var(--secondColor);
       --blogPageHeroBtnShadow: rgba(255, 255, 255, 0.5);
-      --blogPageContentTextColor: #172A2E;
-      --blogPageContentBtnColor: #EAE1CD;
-      --blogPageContentBtnBg: #172A2E;
-      --blogPageContentBtnShadow: rgba(0, 0, 0, 0.5);
+      --blogPageContentTextColor: var(--mainColor);
+      --blogPageContentBtnColor: var(--secondColor);
+      --blogPageContentBtnBg: var(--mainColor);
+      --blogPageContentBtnShadow: var(--sixthwDark);
 
       /* ------font-family------ */
       --fontFamily: 'Proxima Nova Rg';
-    }
-
-    /* font-family */
-    @font-face {
+    } 
+  </style>
+</head>
+<script>
+  window.addEventListener('load', function(){
+    setTimeout(() => {
+      const globalFont= document.createElement('style');
+      globalFont.innerHTML=`    @font-face {
       font-family: 'Proxima Nova Rg';
       src: url('fonts/ProximaNova-Regular.eot');
       src: url('fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
@@ -120,10 +131,13 @@
       font-weight: bold;
       font-style: normal;
       font-display: swap;
-    }
-    
-  </style>
-</head>
+    }   ` ; 
+      document.querySelector('head').append(globalFont);
+    }, 1); 
+  }) 
+  </script>
+
+
 <body class="body">
   <div class="main-wrapper">
     <div class="header-place"></div>
@@ -226,7 +240,41 @@
 
 
  
+<section>
+    <div class="container"> 
+        <div class="colors-settings">
+                <textarea  id='colors-settings'  ></textarea>
+        </div>
 
+    </div>
+
+
+
+
+    <script> 
+            const styles = document.querySelector('.styles-var');
+            const test = styles.style.getPropertyValue('--backgroundHero');
+            const colorSettings= document.getElementById('colors-settings')
+            colorSettings.value=styles.innerHTML  ;
+            colorSettings.addEventListener('input' , ()=>{
+                styles.innerHTML=colorSettings.value;
+            } )
+            styles.style.setProperty(' --backgroundHero', 'red');
+            styles.style.setProperty(' --backgroundHero', 'red');
+    </script>
+
+
+
+</section>
+
+<style>
+    #colors-settings{
+        position: fixed;
+        z-index: 33333;
+        min-height: 200px;
+        width: 100%;
+    }
+</style>
 
 
 <div class="container">
