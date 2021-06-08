@@ -1,0 +1,33 @@
+.wave-bottom{
+    position: relative;
+    z-index: 4;
+    &::before, &::after{
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -100px;
+      right: 0;
+      background-repeat: repeat-x;
+      transform: scale(1.9, 1);
+    }
+    &::after{
+      left: -147px;
+      height: 108px;
+      background-size: 326px 33px;
+      background-image: radial-gradient(circle at 102px 181px,transparent 170px, var(--backgroundShopCannabis)  16px);
+    }
+    &::before{
+      height: 75px;
+      background-size: 326px 93px;
+      background-image: radial-gradient(circle at 153px -103px,var(--backgroundShopCannabis), 130px,transparent 23px);
+    }
+    &__dark{
+      &::after{
+        background-image: radial-gradient(circle at 102px 181px,transparent 170px, var(--backgroundAccessories) 16px);
+      }
+      &::before{
+        background-image: radial-gradient(circle at 153px -103px,var(--backgroundAccessories) 130px,transparent 23px);
+      }
+    }
+  }
