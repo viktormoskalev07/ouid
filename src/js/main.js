@@ -201,6 +201,7 @@ try {
 }
 //dropdown
 
+
 //swiper
 (function () {
     let swiper = Swiper;
@@ -208,7 +209,7 @@ try {
 
     function swiperMode() {
         let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1200px)');
-        let desktop = window.matchMedia('(min-width: 1201px) and (max-width: 4000px)');
+        let desktop = window.matchMedia('(min-width: 1200px) and (max-width: 40000px)');
 
         if (mobile.matches) {
             if (!init) {
@@ -226,7 +227,7 @@ try {
                     },
                     breakpoints: {
                         320: {
-                            slidesPerView: 1,
+                            slidesPerView: 1.5,
                             spaceBetween: 20,
                         },
                         700: {
@@ -285,7 +286,7 @@ try {
                     },
                     breakpoints: {
                         320: {
-                            slidesPerView: 1,
+                            slidesPerView: 1.5,
                             spaceBetween: 20,
                         },
                         700: {

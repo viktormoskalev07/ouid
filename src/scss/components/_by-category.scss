@@ -6,10 +6,18 @@
 
   .swiper-button-prev,
   .swiper-button-next {
+    display: none;
     color: $ShopCannabisArrows;
+    @media (min-width: 700px) {
+      display: block;
+    }
     @include xl {
       display: none;
     }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    top: 28%;
   }
 
   &__content {
@@ -47,11 +55,11 @@
 
   &__img-wrapper {
     position: relative;
-    height: 250px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 250px;
   }
 
   &__img {
