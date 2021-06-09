@@ -48,8 +48,8 @@ var Shares = {
 				this.popupCenter('https://twitter.com/intent/tweet?url=' + url + text, this.title, this.width, this.height);
 				break; 	 
       case 'medi':
-        // here must be link
-        this.popupCenter('https://medium.com/new-story' + url, this.title, this.width, this.height);
+        // here must be correct link?
+        this.popupCenter('https://medium.com/p/import?rel=', this.title, this.width, this.height);
       break;
 		}
 	},
