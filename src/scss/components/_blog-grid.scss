@@ -120,10 +120,14 @@
     @include lg {
       padding: 35px;
     }
-
     h5 {
       margin-top: 0;
       font-size: 1.125rem;
+    }
+    &_big{
+      h5{
+        font-size: 1.8rem;
+      }
     }
 
     time {
