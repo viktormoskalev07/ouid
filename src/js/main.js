@@ -75,6 +75,8 @@ function pagescroll() {
     if ((pscroll < pageYOffset) & (pageYOffset > header.offsetHeight)) {
       header.style.transform = "translateY(-100%)"; //прячем хедер при прокрутке вниз
       header.style.boxShadow = "none";
+    } else if (pageYOffset == 0) {
+      header.style.boxShadow = "none";
     } else {
       header.style.transform = "none"; //показываем хедер при прокрутке вверх
       header.style.boxShadow = "0px 4px 4px 0px rgba(34, 60, 80, 0.18)";
@@ -178,20 +180,22 @@ function dropdown() {
   const drop = document.querySelector(".dropdown__activator");
   const dropBody = document.querySelector(".dropdown");
 
-  if (innerWidth < 992) {
-    drop.addEventListener("click", function () {
-      drop.classList.toggle("dropdown_open");
-    });
-  }
+  window.addEventListener("resize", function () {
+    if (innerWidth < 992) {
+      drop.addEventListener("click", function () {
+        drop.classList.toggle("dropdown_open");
+      });
+    }
 
-  if (innerWidth > 992) {
-    dropBody.addEventListener('mouseenter', function() {
-      drop.classList.add('on-mouse-over')
-    })
-    dropBody.addEventListener('mouseleave', function() {
-      drop.classList.remove('on-mouse-over')
-    })
-  }
+    if (innerWidth > 992) {
+      dropBody.addEventListener("mouseenter", function () {
+        drop.classList.add("on-mouse-over");
+      });
+      dropBody.addEventListener("mouseleave", function () {
+        drop.classList.remove("on-mouse-over");
+      });
+    }
+  });
 }
 
 try {
@@ -201,135 +205,174 @@ try {
 }
 //dropdown
 
-
 //swiper
 (function () {
-    let swiper = Swiper;
-    let init = false;
+  let swiper = Swiper;
+  let init = false;
 
-    function swiperMode() {
-        let mobile = window.matchMedia('(min-width: 0px) and (max-width: 1200px)');
-        let desktop = window.matchMedia('(min-width: 1200px) and (max-width: 40000px)');
+  function swiperMode() {
+    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 1200px)");
+    let desktop = window.matchMedia(
+      "(min-width: 1200px) and (max-width: 40000px)"
+    );
 
-        if (mobile.matches) {
-            if (!init) {
-                init = true;
-                swiper = new Swiper(".swiper-categories", {
-                    slidesPerView: 1,
-                    autoplay: {
-                        delay: 3000,
-                    },
-                    loop: true,
-                    spaceBetween: 10,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    breakpoints: {
-                        320: {
-                            slidesPerView: 1.5,
-                            spaceBetween: 20,
-                        },
-                        700: {
-                            slidesPerView: 2,
-                            spaceBetween: 30,
-                        },
-                        992: {
-                            slidesPerView: 3,
-                            spaceBetween: 40,
-                        },
-                        1170: {
-                            slidesPerView: 3,
-                            spaceBetween: 50,
-                        },
-                    },
-                });
-            }
-
-        } else if (desktop.matches) {
-            init && swiper.destroy();
-            init = false;
-        }
-    }
-
-    window.addEventListener('load', function () {
-        swiperMode();
-    });
-
-    window.addEventListener('resize', function () {
-        swiperMode();
-    });
-}());
-
-
-(function () {
-    let swiperAccessories = Swiper;
-    let init = false;
-
-    function swiperMode() {
-        let mobile = window.matchMedia('(min-width: 0px) and (max-width: 992px)');
-        let desktop = window.matchMedia('(min-width: 993px) and (max-width: 4000px)');
-
-        if (mobile.matches) {
-            if (!init) {
-                init = true;
-                swiperAccessories = new Swiper(".swiper-accessories", {
-                    slidesPerView: 1,
-                    loop: true,
-                    autoplay: {
-                        delay: 3000,
-                    },
-                    spaceBetween: 10,
-                    navigation: {
-                        nextEl: '.swiper-button-next-accessories',
-                        prevEl: '.swiper-button-prev-accessories',
-                    },
-                    breakpoints: {
-                        320: {
-                            slidesPerView: 1.5,
-                            spaceBetween: 20,
-                        },
-                        700: {
-                            slidesPerView: 2,
-                            spaceBetween: 30,
-                        },
-                        992: {
-                            slidesPerView: 3,
-                            spaceBetween: 50,
-                        },
-                    },
-                });
-            }
-
-        } else if (desktop.matches) {
-            init && swiperAccessories.destroy();
-            init = false;
-        }
-    }
-
-    window.addEventListener('load', function () {
-        swiperMode();
-    });
-
-    window.addEventListener('resize', function () {
-        swiperMode();
-    });
-}());
-
-
-//preloader
-if(document.querySelector('.preloader')) {
-    const loader = document.querySelector('.preloader');
-    loader.style.top = document.querySelector('.header').clientHeight + 'px';
-    hidescroll()
-
-    window.onload = function () {
-      document.body.classList.add('loaded_hiding');
-      showscroll()
-      window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-      }, 300);
+    if (mobile.matches) {
+      if (!init) {
+        init = true;
+        swiper = new Swiper(".swiper-categories", {
+          slidesPerView: 1,
+          autoplay: {
+            delay: 3000,
+          },
+          loop: true,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1.5,
+              spaceBetween: 20,
+            },
+            700: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1170: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          },
+        });
+      }
+    } else if (desktop.matches) {
+      init && swiper.destroy();
+      init = false;
     }
   }
+
+  if (document.querySelector(".swiper-categories")) {
+    window.addEventListener("load", function () {
+      swiperMode();
+    });
+
+    window.addEventListener("resize", function () {
+      swiperMode();
+    });
+  }
+})();
+
+(function () {
+  let swiperAccessories = Swiper;
+  let init = false;
+
+  function swiperMode() {
+    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 992px)");
+    let desktop = window.matchMedia(
+      "(min-width: 993px) and (max-width: 4000px)"
+    );
+
+    if (mobile.matches) {
+      if (!init) {
+        init = true;
+        swiperAccessories = new Swiper(".swiper-accessories", {
+          slidesPerView: 1,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+          },
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next-accessories",
+            prevEl: ".swiper-button-prev-accessories",
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1.5,
+              spaceBetween: 20,
+            },
+            700: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          },
+        });
+      }
+    } else if (desktop.matches) {
+      init && swiperAccessories.destroy();
+      init = false;
+    }
+  }
+
+  if (document.querySelector(".swiper-accessories")) {
+    window.addEventListener("load", function () {
+      swiperMode();
+    });
+
+    window.addEventListener("resize", function () {
+      swiperMode();
+    });
+  }
+})();
+
 //preloader
+if (document.querySelector(".preloader")) {
+  const loader = document.querySelector(".preloader");
+  loader.style.top = document.querySelector(".header").clientHeight + "px";
+  hidescroll();
+
+  window.onload = function () {
+    document.body.classList.add("loaded_hiding");
+    showscroll();
+    window.setTimeout(function () {
+      document.body.classList.add("loaded");
+      document.body.classList.remove("loaded_hiding");
+    }, 300);
+  };
+}
+//preloader
+
+//blog-article social
+function placeAbsoluteBlogSocials() {
+  const socialsContainer = document.querySelector(".blog-article__socials");
+  const blogArticle = document.querySelector(".blog-article");
+  const blogHeroContainer = document.querySelector(".blog-article__hero");
+  const blogContentContainer = document.querySelector(".blog-article__content");
+
+  if (innerWidth > 1400) {
+    placeCoord();
+  }
+
+  window.addEventListener("resize", function () {
+    if (innerWidth > 1400) {
+      placeCoord();
+    } else if (innerWidth < 1400) {
+      removeCoord();
+    }
+  });
+
+  function placeCoord() {
+    socialsContainer.classList.add("absolute");
+    socialsContainer.style.top = `${blogContentContainer.offsetTop}px`;
+    socialsContainer.style.left = `${
+      (blogArticle.offsetWidth - blogHeroContainer.offsetWidth) / 2
+    }px`;
+  }
+  function removeCoord() {
+    socialsContainer.classList.remove("absolute");
+  }
+}
+
+if (document.querySelector(".blog-article__socials")) {
+  placeAbsoluteBlogSocials();
+}
+//blog-article social

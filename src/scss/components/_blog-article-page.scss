@@ -1,8 +1,15 @@
 .blog-article {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  position: relative;
+
+  @include md {
+    margin-bottom: 120px;
+  }
+
   &__container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
   }
 
   &__button {
@@ -16,29 +23,45 @@
       align-items: center;
       transition: .3s;
 
-      svg {transition: .3s}
+      svg {
+        transition: .3s
+      }
     }
   }
 
   &__hero {
-    padding: 150px 0;
+    margin-bottom: 40px;
+    padding: 90px 0 160px;
     position: relative;
     z-index: 1;
+
+    @include lg {
+      margin-bottom: 60px;
+    }
 
     &-title {
       text-align: center;
       z-index: 2;
       color: $blogPageHeroTitleColor;
-  
+
+      time {
+        font-weight: 400;
+      }
+
       h1 {
         @include md {
           font-size: 3rem;
+        }
+
+        @include lg {
+          margin-top: 75px;
         }
       }
     }
 
     &-button {
       margin-top: 60px;
+
       a {
         padding: 20px 35px;
         font-size: 1.125rem;
@@ -79,8 +102,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: #000000;
-        opacity: .35;
+        background: linear-gradient(180deg, #172A2E 0%, rgba(23, 42, 46, 0) 100%);
         z-index: 1;
       }
     }
@@ -98,13 +120,17 @@
     }
 
     figure {
-      margin: 15px 0;
+      margin: 40px 0;
       width: 100%;
       max-height: 500px;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
+
+      @include lg {
+        margin: 60px 0;
+      }
 
       img {
         width: 100%;
@@ -135,6 +161,62 @@
 
         svg {
           transform: rotate(90deg) translateY(3px);
+        }
+      }
+    }
+  }
+
+  &__socials {
+
+    @media (max-width: 1400px) {
+      margin-top: 60px;
+    }
+
+    ul {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: none;
+
+      p,
+      li {
+        margin: 10px 6px;
+        text-transform: uppercase;
+
+        @include sm {
+          margin: 10px 15px;
+        }
+      }
+
+      li {
+        font-weight: 700;
+
+        a {
+          display: block;
+          text-decoration: underline;
+          transition: .3s;
+        }
+
+        &:hover {
+          a {
+            transform: translateX(3px);
+          }
+        }
+      }
+    }
+
+    &.absolute {
+      position: absolute;
+
+      ul {
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          font-size: .75rem;
         }
       }
     }
