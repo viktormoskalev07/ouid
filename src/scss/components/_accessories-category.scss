@@ -103,6 +103,12 @@
     }
   }
 
+  &__bg-img {
+    svg {
+      fill: $ShopAccessoriesArrows;
+    }
+  }
+
   &__img {
     position: absolute;
     z-index: 2;
