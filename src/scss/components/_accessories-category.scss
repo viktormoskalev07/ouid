@@ -14,6 +14,9 @@
       }
   }
 
+  .swiper-accessories {
+    margin: 0 -20px;
+  }
 
   .swiper-button-prev-accessories,
   .swiper-button-next-accessories {
@@ -53,8 +56,6 @@
   }
 
   &__card {
-    width: auto;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
