@@ -3,16 +3,18 @@
  
 <!-- @@include('./html-templates/_theme_settings.html') -->
 
+<section class="hero" style="order: 1">
+  <div class="container">
+    @@include('./html-templates/hero.html',{
+    title:"Proudly serving the</br>Ottawa area!",
+    text:"Tell people about what you, your expertise and experience. Think about what you would want to see on this page if you were looking at an about page.",
+    textBtn:"Shop Online",
+    })
+  </div> 
+</section>
+  
 
-<div class="container">
-  @@include('./html-templates/hero.html',{
-  title:"Proudly serving the</br>Ottawa area!",
-  text:"Tell people about what you, your expertise and experience. Think about what you would want to see on this page if you were looking at an about page.",
-  textBtn:"Shop Online",
-  })
-</div>
-
-<section class="by-category wave-top">
+<section class="by-category wave-top" style="order: 1">
   @@include('./html-templates/cannabis-by-category.html',{
   bgColor:"#D7A461",
   title:"Shop Cannabis by category", 
@@ -45,7 +47,7 @@
   })
 </section>
 
-<section class="accessories-category wave-bottom wave-bottom__dark">
+<section class="accessories-category wave-bottom wave-bottom__dark" style="order: 1">
   @@include('./html-templates/accessories-category.html',{
   bgColorWaveTop:"#D7A461",
   bgColorWaveDown:"#172A2E",

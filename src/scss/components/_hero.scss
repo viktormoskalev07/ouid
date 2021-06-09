@@ -30,11 +30,14 @@
     width: 40%;
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    top: 10%;
 
     @include lg {
       width: 385px;
       height: 540px;
+      align-items: flex-end;
+      top: 0;
     }
   }
 
@@ -147,10 +150,11 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 120%;
-    padding-bottom: 60px;
+    padding-bottom: 170px;
     text-align: center;
 
     @include lg {
+      padding-bottom: 60px;
       font-size: 18px;
     }
   }
@@ -159,11 +163,14 @@
     width: 35%;
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    top: 12%;
 
     @include lg {
+      top: 0;
       width: 330px;
       height: 300px;
+      align-items: flex-end;
     }
   }
 
