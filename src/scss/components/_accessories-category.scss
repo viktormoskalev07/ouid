@@ -54,18 +54,6 @@
 
   }
 
-  .wave-up {
-    bottom: 100%;
-    z-index: 0;
-  }
-
-  .wave-down {
-    transform: rotate(
-                    180deg
-    );
-    line-height: 0;
-    z-index: 11;
-  }
 
   &__cards-box {
     display: flex;

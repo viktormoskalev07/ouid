@@ -214,25 +214,4 @@ img {
   display: block;
 }
 
-.wave {
-  margin-bottom: -10px;
-  background-position-y: 40px;
-  background-size: 50% 100%;
-  background-repeat: repeat-x;
-  position: absolute;
-  width: 100%;
-  line-height: 0;
-  height: 115px;
-  @include sm {
-    background-size: 35% 125%;
-  }
-  @include lg {
-    background-size: 35% 160%;
-    background-position-y: 5px;
-  }
-  @include xxl {
-    background-size: contain;
-    background-position-y: 5px;
-  }
-}
 

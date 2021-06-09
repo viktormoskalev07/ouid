@@ -23,7 +23,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 
   &__title {
@@ -101,15 +101,4 @@
     }
   }
 
-  .wave-up {
-    bottom: 100%;
-  }
-
-  .wave-down {
-    top: 100%;
-    z-index: 11;
-    transform: rotate(
-                    180deg
-    );
-  }
 }
