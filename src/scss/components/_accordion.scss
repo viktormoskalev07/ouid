@@ -24,7 +24,9 @@
     position: absolute;
     top: 50px;
     left: 0;
+    display: none;
     @include lg {
+      display: block;
       left: 85px;
     }
   }
@@ -33,7 +35,9 @@
     position: absolute;
     top: 50px;
     right: 0;
+    display: none;
     @include lg {
+      display: block;
       left: 120px;
     }
   }

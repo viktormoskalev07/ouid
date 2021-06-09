@@ -38,7 +38,7 @@
   &__cards-box {
     padding: 0 15px;
     width: 100%;
-    position: static;
+    position: relative;
     display: flex;
     justify-content: space-around;
     color: $locationText;
@@ -50,6 +50,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       padding: 0;
+      position: static;
     }
     @include lg {
       width: 1380px;
