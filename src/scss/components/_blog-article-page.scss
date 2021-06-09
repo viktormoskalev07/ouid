@@ -191,16 +191,23 @@
       }
 
       li {
-        font-weight: 700;
 
-        a {
+        button {
+          font-family: inherit;
+          font-size: 1rem;
+          font-weight: 700;
           display: block;
           text-decoration: underline;
           transition: .3s;
+          border: none;
+          background-color: transparent;
+          padding: 0;
+          text-transform: uppercase;
+          cursor: pointer;
         }
 
         &:hover {
-          a {
+          button {
             transform: translateX(3px);
           }
         }
