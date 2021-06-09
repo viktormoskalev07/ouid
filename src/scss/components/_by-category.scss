@@ -61,6 +61,11 @@
     align-items: center;
     width: 250px;
   }
+  &__bg-img{
+    svg{
+      fill: $ShopCannabisTitle;
+    }
+  }
 
   &__img {
     position: absolute;
