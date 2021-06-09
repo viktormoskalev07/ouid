@@ -18,6 +18,12 @@
 		z-index: 2;
 		position: relative;
 
+		@media (max-width: 991.98px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		&::after {
 			@include lg {
 				content: '';
@@ -36,6 +42,7 @@
 
 			@include lg {
 				margin-left: 5px;
+				margin-bottom: 2px;
 			}
 			@include xxl {
 				margin-left: 10px;
@@ -84,6 +91,8 @@
 			text-align: left;
 			padding: 0 10px;
 			min-width: 200px;
+			box-sizing: border-box;
+			box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 		}
 
 		li {

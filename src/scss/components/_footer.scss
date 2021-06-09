@@ -13,12 +13,12 @@
   }
 
   &__links {
-    order: 2;
+    // order: 2;
     background-color: $footerColorBg1;
     color: $clr-light;
 
     @include md {
-      order: 1;
+      // order: 1;
     }
 
     .footer-links {
@@ -116,17 +116,21 @@
   }
 
   &__form {
-    order: 1;
+    // order: 1;
     background-color: $footerColorBg2;
 
     @include md {
-      order: 2;
+      // order: 2;
     }
 
     .footer-form {
       &__wrapper {
         width: 80%;
-        margin: 40px auto;
+        margin: 75px auto 115px;
+
+        @include md {
+          margin: 40px auto;
+        }
 
         p {
           text-align: center;
@@ -206,13 +210,17 @@
   }
 
   &__bg-img {
-    display: none;
+    display: block;
+    position: absolute;
+    bottom: -175px;
+    right: 0;
+
+    @include md {
+      bottom: -220px;
+    }
 
     @include xxl {
-      display: block;
-      position: absolute;
       bottom: 0;
-      right: 0;
     }
   }
 }

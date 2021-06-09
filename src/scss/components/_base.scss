@@ -1,5 +1,7 @@
 // --------------header--------------
 $headerBackgroundColor: var(--headerBackgroundColor, white);
+$headerBackgroundColorOpenMenu: var(--headerBackgroundColorOpenMenu, black);
+$headerTextColorOpenMenu: var(--headerTextColorOpenMenu, white);
 $headerLinkDecarationColor: var(--headerLinkDecarationColor, black);
 $headerShadowFocus: var(--headerShadowFocus, rgba(0, 0, 0, 0.5));
 $headerBtnColor: var(--headerBtnColor, white);
@@ -106,6 +108,8 @@ $blogPageContentBtnColor: var(--blogPageContentBtnColor, white);
 $blogPageContentBtnBg: var(--blogPageContentBtnBg, black);
 $blogPageContentBtnShadow: var(--blogPageContentBtnShadow, rgba(0, 0, 0, 0.5));
 
+$fontFamily: var(--fontFamily, sans-serif);
+
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
@@ -187,7 +191,7 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: $fontFamily;
   font-size: $font-base;
   color: $clr-text-main;
 }
