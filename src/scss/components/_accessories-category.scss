@@ -12,17 +12,14 @@
       }
     }
   }
+
   @include lg {
     .swiper-accessories.swiper-container {
       width: 100%;
       padding: 0 40px;
     }
   }
-  @include lg {
-      .swiper-accessories .swiper-wrapper .swiper-slide {
 
-      }
-  }
 
   .swiper-accessories {
     margin: 0 -20px;
@@ -152,4 +149,5 @@
       box-shadow: $ShopAccessoriesShadowFocus;
     }
   }
+
 }
