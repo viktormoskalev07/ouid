@@ -67,9 +67,6 @@
       }
 
       picture {
-        @include sm {
-          height: 400px !important;
-        }
 
         @include lg {
           height: 100% !important;

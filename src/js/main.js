@@ -351,6 +351,9 @@ if (document.querySelector(".preloader")) {
       document.body.classList.remove("loaded_hiding");
     }, 300);
   };
+  setTimeout(function() {
+    document.body.classList.remove("loaded_hiding");
+  }, 5000)
 }
 //preloader
 
