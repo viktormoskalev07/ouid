@@ -107,6 +107,10 @@
 			justify-content: center;
 			flex-direction: column;
 
+			@media (max-width: 991.98px) {
+				padding-bottom: 100px;
+			}
+
 			@include lg {
 				width: 40%;
 				justify-content: flex-end;
@@ -185,8 +189,7 @@
 		transition: 0.2s;
 
 		@media (max-width: 991.98px) {
-			padding-top: 70px;
-			background-color: $headerBackgroundColorOpenMenu;
+			margin-top: 70px;
 		}
 
 		&__wrap {
@@ -268,7 +271,7 @@
 		left: 0;
 		bottom: 0;
 		right: 0;
-		background-color: rgba(44, 44, 44, 0.815);
+		background-color: $headerBackgroundColorOpenMenu;
 	}
 
 	.btn-menu {
@@ -278,7 +281,6 @@
 
 			@media (max-width: 991.98px) {
 				background-color: $headerTextColorOpenMenu;
-
 			}
 		}
 
@@ -315,6 +317,8 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	border: none;
+	background-color: transparent;
 
 	@include lg {
 		display: none;
