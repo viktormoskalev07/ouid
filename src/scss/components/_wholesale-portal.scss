@@ -17,19 +17,22 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
     @include lg {
+      flex-direction: row;
       align-items: center;
     }
   }
 
   &__left-container {
-    width: 30%;
-    position: relative;
+    width: 400px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    position: relative;
 
     @include lg {
+      align-items: flex-end;
       width: 385px;
       height: 540px;
     }
@@ -37,6 +40,7 @@
 
   &__img-left {
     position: absolute;
+    width: 100%;
 
     @include lg {
       top: 90px;
@@ -45,51 +49,54 @@
 
   &__oval-top {
     position: absolute;
-    left: 65px;
-    top: 35px;
-    display: none;
-
-
+    left: 220px;
+    top: 50px;
     @include lg {
-      display: block;
+      left: 65px;
+      top: 35px;
+
     }
   }
 
   &__oval-centre {
     position: absolute;
-    top: 285px;
-    left: 300px;
-    display: none;
+    top: 225px;
+    left: 335px;
 
     @include lg {
-      display: block;
+      top: 285px;
+      left: 300px;
     }
   }
 
   &__oval-bottom {
     position: absolute;
-    bottom: 145px;
-    right: 42px;
-    display: none;
+    top: 280px;
+    right: 45px;
 
     @include lg {
-      display: block;
+      bottom: 145px;
+      right: 42px;
     }
   }
 
   &__img-right {
-    position: absolute;
-    left: 20px;
+    display: flex;
+    justify-content: center;
+    @include lg {
+      position: absolute;
+      left: 20px;
+    }
   }
 
   &__oval-top-right {
     position: absolute;
-    left: 280px;
-    top: 65px;
-    display: none;
+    bottom: 220px;
+    left: 335px;
 
     @include lg {
-      display: block;
+      left: 280px;
+      top: 65px;
     }
   }
 
@@ -97,12 +104,10 @@
   &__oval-top-bottom {
     position: absolute;
     bottom: 0;
-    display: none;
-    width: 250px;
     right: 0;
 
     @include lg {
-      display: block;
+
     }
   }
 
@@ -112,49 +117,52 @@
     align-items: center;
     color: $wholesaleText;
     z-index: 2;
-    padding-top: 30px;
-    padding-bottom: 90px;
     position: relative;
+    padding-top: 400px;
+    padding-bottom: 400px;
+    @include lg {
+      padding-bottom: 90px;
+      padding-top: 30px;
+    }
   }
 
   &__title {
+    margin: 0;
     text-align: center;
     width: 100%;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 100%;
-    padding: 0 15px;
 
-    @include lg {
+    @include md {
+      padding: 0 15px;
       font-size: 72px;
       min-width: 700px;
     }
-    @media (max-width: 1105px) {
-      font-size: 55px;
-    }
+
   }
 
   &__text {
-    padding: 0 15px;
+    margin: 0;
+    padding: 20px 15px;
     width: 100%;
     max-width: 340px;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 120%;
-    padding-bottom: 60px;
     text-align: center;
 
-    @include lg {
+    @include md {
+      padding-bottom: 60px;
       max-width: 425px;
       font-size: 18px;
     }
   }
 
   &__right-container {
-    width: 35%;
+    width: 400px;
     position: relative;
-    display: flex;
-    align-items: flex-end;
+    align-self: flex-end;
+    margin-bottom: 70px;
 
     @include lg {
       width: 330px;
@@ -165,20 +173,19 @@
   &__button {
     color: $wholesaleBtnText;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 25px;
     line-height: 100%;
     background-color: $wholesaleBtnBg;
     border: none;
-    padding: 15px;
     border-radius: 5px;
     transition: all .5s ease;
+    padding: 20px 35px;
 
     &:hover {
       box-shadow: $wholesaleShadowFocus;
     }
 
     @include lg {
-      font-size: 25px;
       padding: 20px 30px;
     }
   }
