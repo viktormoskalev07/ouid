@@ -64,9 +64,6 @@
       }
 
       picture {
-        @include sm {
-          max-height: 400px !important;
-        }
 
         @include lg {
           height: 100% !important;
