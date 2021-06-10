@@ -1,5 +1,74 @@
 .instagram {
+  background-color: $blogColorBg1;
   &__container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 30px;
+    @include md {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-top: 40px;
+    font-size: 24px;
+    line-height: 100%;
+    @include md {
+      font-size: 35px;
+    }
+  }
+
+  &__sub-title {
+    font-size: 18px;
+    line-height: 120%;
+    padding-bottom: 20px;
+    width: 70%;
+    text-align: center;
+  }
+
+  &__item {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    @include md {
+      width: 23%;
+    }
+  }
+
+  &__user-name {
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0;
+    padding: 10px 0 30px;
+    @include md {
+      font-size: 25px;
+    }
+  }
+
+  &__icon-box {
+    display: flex;
+    padding-bottom: 25px;
+
+    svg {
+      fill: $clr-text-main;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__name-account {
+    color: $clr-text-main;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 120%;
+    padding-left: 15px;
   }
 }

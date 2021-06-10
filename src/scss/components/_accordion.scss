@@ -24,7 +24,9 @@
     position: absolute;
     top: 50px;
     left: 0;
+    display: none;
     @include lg {
+      display: block;
       left: 85px;
     }
   }
@@ -33,7 +35,9 @@
     position: absolute;
     top: 50px;
     right: 0;
+    display: none;
     @include lg {
+      display: block;
       left: 120px;
     }
   }
@@ -56,19 +60,26 @@
     }
   }
 
+  &__item {
+    width: 100%;
+    padding-right: 15px;
+  }
 
   &__title-text {
+    max-width: 90%;
+    min-height: 75px;
     padding: 25px 5px;
     margin: 0;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     color: $accordionTitleText;
-    min-width: 100%;
     position: relative;
+    padding-right: 25px;
     @include lg {
       font-size: 30px;
     }
+
     &:focus {
       background-color: $accordionTitleTextFocus;
       border-radius: 2px;
@@ -80,7 +91,7 @@
       font-size: 48px;
       font-weight: 200;
       position: absolute;
-      right: 0;
+      right: -75px;
       top: -15px;
       padding: 25px 5px;
     }
@@ -88,7 +99,7 @@
     .is-open &::after {
       content: url('../images/icons/minus.svg');
       position: absolute;
-      right: 0;
+      right: -75px;
       top: -25px;
     }
   }
@@ -101,7 +112,7 @@
   }
 
   &__content {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   &__text {
@@ -111,37 +122,47 @@
       font-size: 20px;
     }
   }
-  &__light{
+
+  &__light {
     margin: 0;
     background-color: var(--backgroundAccordionLight);
-    .accordion__content-wrap{
+
+    .accordion__content-wrap {
       align-items: initial;
-      @include lg{
+      @include lg {
         border-top: 2px solid #172A2E;
-      }      
+      }
     }
-    .accordion__body{
+
+    .accordion__body {
       border-bottom: 2px solid #172A2E;
     }
-    .accordion__title{
+
+    .accordion__title {
       text-align: center;
     }
-    .accordion__title, .accordion__title-text, .accordion__text{
+
+    .accordion__title, .accordion__title-text, .accordion__text {
       color: var(--backgroundAccordionLightText);
     }
-    .accordion__text{
+
+    .accordion__text {
       margin-bottom: 30px;
     }
-    .accordion__title-text{
+
+    .accordion__title-text {
       padding-right: 50px;
+
       &:focus {
         background-color: transparent;
         border-radius: 2px;
       }
-      &::after{
+
+      &::after {
         content: url('../images/icons/plus-dark.svg');
       }
     }
+
     .is-open .accordion__title-text::after {
       content: url('../images/icons/minus-dark.svg');
     }

@@ -2,6 +2,29 @@
   position: relative;
   background-color: $backgroundAccessories;
 
+  .swiper-accessories {
+    .swiper-wrapper {
+      height: auto;
+      @include lg {
+        .swiper-slide {
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  @include lg {
+    .swiper-accessories.swiper-container {
+      width: 100%;
+      padding: 0 40px;
+    }
+  }
+
+
+  .swiper-accessories {
+    margin: 0 -20px;
+  }
+
   .swiper-button-prev-accessories,
   .swiper-button-next-accessories {
     color: $ShopAccessoriesArrows;
@@ -40,20 +63,16 @@
   }
 
   &__card {
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
     @include lg {
-      padding-bottom: 5px;
-      min-width: 200px;
+      padding-bottom: 70px;
     }
-
   }
-
 
   &__cards-box {
     display: flex;
@@ -80,15 +99,10 @@
 
 
   &__img-wrapper {
-    position: relative;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    @include lg {
-      height: 250px;
-    }
+    height: 350px;
   }
 
   &__bg-img {
@@ -101,16 +115,19 @@
     position: absolute;
     z-index: 2;
     top: 0;
+    height: 350px;
     @include lg {
       top: inherit;
     }
 
     img {
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
   &__name {
+    padding: 10px;
+    margin: 0;
     font-weight: bold;
     font-size: 30px;
     line-height: 100%;
@@ -132,4 +149,5 @@
       box-shadow: $ShopAccessoriesShadowFocus;
     }
   }
+
 }

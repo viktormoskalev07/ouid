@@ -3,7 +3,7 @@ function instagramIntegration() {
   let container = document.querySelector("#instagam-cont");
 
   // put here your instagram feed id from curator io
-  const INST_FEED_ID = ''
+  const INST_FEED_ID = '16ffe87b-cb7e-4091-8ff6-bd0b35f8ded6';
 
   xhr.onload = function() {
     if (xhr.status === 200) {
@@ -39,7 +39,7 @@ function instagramIntegration() {
 }
 
 if (document.readyState === "loading") {
-  // document.addEventListener("DOMContentLoaded", instagramIntegration());
+  document.addEventListener("DOMContentLoaded", instagramIntegration());
 } else {
-  // instagramIntegration();
+  instagramIntegration();
 }
