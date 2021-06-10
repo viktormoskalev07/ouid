@@ -115,4 +115,39 @@
       font-size: 20px;
     }
   }
+  &__light{
+    margin: 0;
+    background-color: var(--backgroundAccordionLight);
+    .accordion__content-wrap{
+      align-items: initial;
+      @include lg{
+        border-top: 2px solid #172A2E;
+      }      
+    }
+    .accordion__body{
+      border-bottom: 2px solid #172A2E;
+    }
+    .accordion__title{
+      text-align: center;
+    }
+    .accordion__title, .accordion__title-text, .accordion__text{
+      color: var(--backgroundAccordionLightText);
+    }
+    .accordion__text{
+      margin-bottom: 30px;
+    }
+    .accordion__title-text{
+      padding-right: 50px;
+      &:focus {
+        background-color: transparent;
+        border-radius: 2px;
+      }
+      &::after{
+        content: url('../images/icons/plus-dark.svg');
+      }
+    }
+    .is-open .accordion__title-text::after {
+      content: url('../images/icons/minus-dark.svg');
+    }
+  }
 }
