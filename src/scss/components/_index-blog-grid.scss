@@ -90,7 +90,18 @@
         h5 {
           font-size: 1em
         }
-
+    @include lg {
+      padding: 35px;
+    }
+    h5 {
+      margin-top: 0;
+      font-size: 1.125rem;
+    }
+    &_big{
+      h5{
+        font-size: 1.8rem;
+      }
+    }
         time {
           font-size: 0.875em;
         }
@@ -99,7 +110,6 @@
       picture {
         max-width: 210px;
         flex: 0 0 40%;
-
         @include sm {
           max-width: 210px;
           flex: 0 0 210px;
