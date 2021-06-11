@@ -66,7 +66,6 @@
   }
 
   &__title-text {
-    max-width: 90%;
     min-height: 75px;
     padding: 25px 5px;
     margin: 0;
@@ -91,7 +90,7 @@
       font-size: 48px;
       font-weight: 200;
       position: absolute;
-      right: -75px;
+      right: 0px;
       top: -15px;
       padding: 25px 5px;
     }
@@ -99,7 +98,7 @@
     .is-open &::after {
       content: url('../images/icons/minus.svg');
       position: absolute;
-      right: -75px;
+      right: 0px;
       top: -25px;
     }
   }
