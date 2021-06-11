@@ -1,7 +1,7 @@
 .blog-grid, .blog-page {
 
   @include lg {
-    padding: 90px 0;
+    padding: 120px 0 90px;
   }
 
   &__container {

@@ -121,8 +121,8 @@
     padding-top: 400px;
     padding-bottom: 400px;
     @include lg {
-      padding-bottom: 90px;
-      padding-top: 30px;
+      padding-bottom: 115px;
+      padding-top: 115px;
     }
   }
 
@@ -133,8 +133,11 @@
     font-size: 36px;
     line-height: 100%;
 
-    @include md {
+    @include sm {
       padding: 0 15px;
+      font-size: 55px;
+    }
+    @include md{
       font-size: 72px;
       min-width: 700px;
     }
@@ -142,6 +145,7 @@
   }
 
   &__text {
+    opacity: 0.5;
     margin: 0;
     padding: 20px 15px;
     width: 100%;
@@ -152,8 +156,8 @@
     text-align: center;
 
     @include md {
-      padding-bottom: 60px;
-      max-width: 425px;
+      padding: 50px 15px;
+      max-width: 460px;
       font-size: 18px;
     }
   }
