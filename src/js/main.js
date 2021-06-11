@@ -6,8 +6,7 @@ btnMenu = document.querySelector(".btn-menu");
 window.onload = function () {
   pagescroll();
 };
-
-// мобильное меню
+ 
 nav = document.querySelector(".nav");
 document.querySelector(".btn-menu").addEventListener("click", togglenav);
 // document.querySelector(".nav-menu").onclick = closenav;
@@ -189,9 +188,8 @@ if (document.querySelector(".accordion")) {
 
 function dropdown() {
   const drop = document.querySelector(".dropdown__activator");
-  const dropBody = document.querySelector(".dropdown");
-
-  if (innerWidth < 992) {
+  // const dropBody = document.querySelector(".dropdown");
+ 
     drop.addEventListener("click", function (e) {
       target = e.target.classList.contains("dropdown__activator");
       if (
@@ -201,14 +199,15 @@ function dropdown() {
         drop.classList.toggle("dropdown_open");
       }
     });
-  } else if (innerWidth > 992) {
-    dropBody.addEventListener("mouseenter", function () {
-      drop.classList.add("on-mouse-over");
-    });
-    dropBody.addEventListener("mouseleave", function () {
-      drop.classList.remove("on-mouse-over");
-    });
-  }
+ 
+  //  else if (innerWidth > 992) {
+  //   dropBody.addEventListener("mouseenter", function () {
+  //     drop.classList.add("on-mouse-over");
+  //   });
+  //   dropBody.addEventListener("mouseleave", function () {
+  //     drop.classList.remove("on-mouse-over");
+  //   });
+  // }
 }
 
 try {
