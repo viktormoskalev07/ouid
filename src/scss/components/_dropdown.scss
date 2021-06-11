@@ -8,7 +8,7 @@
 	@include lg { 
 		position: absolute; 
 		top: 50px;
-		left: 10px; 
+		left: 0; 
 		&:hover {
 			pointer-events: all;
 			opacity: 1;
