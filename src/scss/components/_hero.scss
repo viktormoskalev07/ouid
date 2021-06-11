@@ -13,105 +13,110 @@
     margin: 0 auto;
   }
 
-  &__images-container {
+  &__bg-image {
     position: absolute;
-    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__images-container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    img{
+      height: auto;
+    }
 
     @include lg {
       align-items: center;
     }
   }
 
-  &__left-container {
-    width: 40%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    top: 10%;
-
-    @include lg {
-      width: 385px;
-      height: 540px;
-      align-items: flex-end;
-      top: 0;
-    }
-  }
-
-  &__img-left {
-    position: absolute;
-  }
-
   &__oval-top {
     position: absolute;
-    left: 100px;
-    top: 115px;
-    display: none;
+    top: 30px;
+    width: 25px;
+    left: 40px;
 
     @include lg {
-      display: block;
+      width: 100%;
+      left: 100px;
+      top: 115px;
     }
   }
 
   &__oval-centre {
     position: absolute;
-    top: 175px;
-    left: 190px;
-    display: none;
+    top: 60px;
+    left: 80px;
+    width: 20px;
 
     @include lg {
-      display: block;
+      width: 100%;
+      top: 175px;
+      left: 190px;
     }
   }
 
   &__oval-bottom {
     position: absolute;
-    bottom: 200px;
-    right: 80px;
-    display: none;
+    bottom: 100px;
+    right: 40px;
+    width: 20px;
 
     @include lg {
-      display: block;
+      width: 100%;
+      bottom: 182px;
+      right: -225px;
     }
   }
 
-  &__img-right {
-    position: absolute;
-  }
 
   &__oval-top-right {
     position: absolute;
-    left: 130px;
-    top: -120px;
-    display: none;
+    width: 30px;
+    top: -35px;
+    left: 70px;
 
     @include lg {
-      display: block;
+      width: 100%;
+      left: 130px;
+      top: -70px;
     }
   }
 
   &__oval-top-centre {
     position: absolute;
-    left: 175px;
-    bottom: 345px;
-    display: none;
+    width: 20px;
+    top: -25px;
+    left: 52px;
 
     @include lg {
-      display: block;
+      width: 100%;
+      left: 175px;
+      bottom: 345px;
     }
   }
 
   &__oval-top-bottom {
     position: absolute;
-    bottom: 120px;
-    left: 200px;
-    display: none;
+    top: 75px;
+    left: 56px;
 
     @include lg {
-      display: block;
+      bottom: 120px;
+      left: 200px;
+      top: 145px;
     }
   }
 
@@ -124,10 +129,15 @@
     padding-top: 40px;
     padding-bottom: 200px;
     position: relative;
+    margin: 0 auto;
+    @include md {
+      padding-bottom: 190px;
+      padding-top: 100px;
+      align-self: center;
+    }
   }
 
   &__title {
-    max-width: 330px;
     text-align: center;
     width: 100%;
     font-weight: bold;
@@ -136,41 +146,71 @@
     padding: 0 15px;
 
     @include md {
-      font-size: 55px;
-      max-width: 450px;
-    }
-    @include lg {
-      max-width: 700px;
       font-size: 72px;
+      min-width: 700px;
     }
-    
   }
 
   &__text {
     padding: 0 15px;
     width: 100%;
-    max-width: 450px;
+    max-width: 425px;
     font-weight: normal;
     font-size: 16px;
     line-height: 120%;
-    padding-bottom: 170px;
+    padding-bottom: 200px;
     text-align: center;
-    opacity: 0.5;
 
-    @include lg {
+    @include md {
       padding-bottom: 60px;
       font-size: 18px;
     }
   }
 
-  &__right-container {
-    width: 35%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    top: 12%;
+  &__left-container {
+    position: absolute;;
+    top: 280px;
+    left: 0;
+    right: 0;
 
     @include lg {
+      position: relative;
+      width: 385px;
+      height: 540px;
+      align-items: flex-end;
+      top: 0;
+    }
+  }
+
+  &__img-left {
+    width: 200px;
+    position: absolute;
+    @include lg {
+      width: 385px;
+      height: 540px;
+    }
+  }
+
+  &__img-right {
+    position: absolute;
+    right: 0;
+    width: 130px;
+    @include lg {
+      width: 330px;
+      height: 540px;
+      top: 70px;
+      right: 0;
+    }
+  }
+
+  &__right-container {
+    position: absolute;;
+    top: 380px;
+    left: 0;
+    right: 0;
+
+    @include lg {
+      position: relative;
       top: 0;
       width: 330px;
       height: 300px;
@@ -202,7 +242,4 @@
     }
   }
 
-  img {
-    height: auto;
-  }
 }
