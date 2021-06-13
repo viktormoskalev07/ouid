@@ -4,6 +4,7 @@ function instagramIntegration() {
   const instaUserName = document.querySelectorAll(".instagram__user-name"); 
   const instaImg = document.querySelectorAll(".instagram__image img");
   const instaOld = document.querySelectorAll(".instagram__img__old");
+  const accountTitle = document.querySelector(".instagram__name-account");
 
   // put here your instagram feed id from curator io
   //const INST_FEED_ID = '16ffe87b-cb7e-4091-8ff6-bd0b35f8ded6';
@@ -13,6 +14,7 @@ function instagramIntegration() {
     if (xhr.status === 200) {
       let posts = JSON.parse(xhr.response).posts;
       if(posts){
+        accountTitle.innerHTML= "@"+posts[0].user_full_name;
         for (let i = 0; i < 4; i++) { 
           try{
             const post = posts[i];  
