@@ -89,7 +89,7 @@ function pagescroll() {
 }
 
 //Появление меню при прокрутке
-
+ 
 //отправка формы
 const form = document.querySelectorAll(".order-form");
 
@@ -131,6 +131,11 @@ for (i = 0; i < form.length; i++) {
   form[i].addEventListener("submit", ajaxform);
 }
 //отправка формы
+
+
+
+
+
 
 // accordion
 
