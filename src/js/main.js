@@ -89,45 +89,41 @@ function pagescroll() {
 }
 
 //Появление меню при прокрутке
-
+ 
 //отправка формы
-let form = document.querySelectorAll(".order-form");
+const form = document.querySelectorAll(".order-form");
 
 const modal = document.getElementById("modal");
 
 function ajaxform(evt) {
-  gtag("event", "submit", {
-    event_category: "Form",
-  });
+  const mailTo= this.dataset.emailto;
   evt.preventDefault();
   let formstatus = this.querySelector(".formstatus");
-  formstatus.innerHTML = '<class="load-form">Соедиенеие ...';
+  formstatus.innerHTML = '<class="load-form">Connecting ...';
 
-  let formData = {
-    desc: this.querySelector('input[name="description"]').value,
-    name: this.querySelector('input[name="name"]').value,
-
-    phone: this.querySelector('input[name="phone"]').value,
-  };
-  console.log(formData);
-  let request = new XMLHttpRequest();
-
-  request.addEventListener("load", function () {
-    formstatus.innerHTML = "Ваша заявка успешно отправлена, ожидайте звонка";
+  const input= this.querySelector('input[name="email"]');
+  const formData= input.value;
+ 
+  const request = new XMLHttpRequest();
+  input.style='border:solid red 1px ; opacity:0.9';
+  request.addEventListener("load", function () { 
+    formstatus.innerHTML = request.response;   
+    input.style='border:solid green 1px';
+    setTimeout(() => {
+        formstatus.innerHTML='';
+        input.style='';
+    }, 4000);
+   
   });
 
-  request.open("POST", "/mail.php", true);
+  request.open("POST", "wp-content/themes/SmartUiOuid/mail.php", true);
   request.setRequestHeader(
     "Content-Type",
     "application/x-www-form-urlencoded; charset=UTF-8"
   );
   request.send(
-    "name=" +
-      encodeURIComponent(formData.name) +
-      "&phone=" +
-      encodeURIComponent(formData.phone) +
-      "&desc=" +
-      encodeURIComponent(formData.desc)
+    "email="+ encodeURIComponent(formData)+'&emailto='+  encodeURIComponent(mailTo)  
+    
   );
 }
 
@@ -135,6 +131,11 @@ for (i = 0; i < form.length; i++) {
   form[i].addEventListener("submit", ajaxform);
 }
 //отправка формы
+
+
+
+
+
 
 // accordion
 
@@ -160,8 +161,12 @@ function accordionInit() {
         openedItem(item);
       });
 
-      title.addEventListener("keydown", (e) => {
-        openedItem(item);
+      title.addEventListener("keydown", (event) => {
+        if (event.code==='Enter'){
+
+          openedItem(item);
+        }
+
       });
     });
 

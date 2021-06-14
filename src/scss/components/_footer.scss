@@ -155,11 +155,13 @@
 
       &__submit {
         margin-top: 30px;
-
+        font-size: 0;
+       
         input, button {
           border: 0;
           height: 45px;
           transition: .3s;
+          vertical-align: bottom;
 
           &:focus {
             outline: transparent;

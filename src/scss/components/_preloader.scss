@@ -6,7 +6,7 @@
   bottom: 0;
   overflow: hidden;
   background: $headerBackgroundColor;
-  z-index: 1001;
+  z-index: 10;
 
   &__image {
     position: absolute;
@@ -17,7 +17,7 @@
     margin-top: -35px;
     margin-left: -35px;
     text-align: center;
-    animation: preloader-rotate 2s infinite linear;
+    animation: preloader-rotate 1s infinite linear;
   }
 
   &__caption {
