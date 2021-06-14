@@ -117,7 +117,7 @@
 
   &__text {
     color: $accordionTextContent;
-    font-size: 16px;
+    font-size: 18px;
     @include lg {
       font-size: 20px;
     }
@@ -147,6 +147,7 @@
     }
 
     .accordion__text {
+      font-size: 18px;
       margin-bottom: 30px;
     }
 
