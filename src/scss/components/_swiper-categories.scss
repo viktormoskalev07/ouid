@@ -15,6 +15,7 @@
       min-width: 100%;
       width: auto;
       .swiper-slide {
+        flex-grow: 1;
         width: 18%;
         padding: 5px 25px;
         margin: 5px 0 !important;
@@ -30,17 +31,22 @@
   }
 }
 
+
 .swiper-accessories {
+  margin: 0 -20px;
   .swiper-wrapper {
-    @include lg {
+    @include xl{
+      flex-wrap: wrap;
+      justify-content: center;
       transform: none !important;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       min-width: 100%;
       width: auto;
       .swiper-slide {
-      width: 20%;
+        padding: 5px 25px;
+        margin: 5px 0 !important;
+        flex-grow: 1;
+      width: 18%;
       }
     }
   }

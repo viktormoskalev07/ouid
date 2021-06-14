@@ -85,6 +85,7 @@
 
 
     &::after {
+      transition: all 500s;
       content: url('../images/icons/plus.svg');
       font-size: 48px;
       font-weight: 200;
@@ -95,6 +96,7 @@
     }
 
     .is-open &::after {
+      transition: all 500s;
       content: url('../images/icons/minus.svg');
       position: absolute;
       right: 0px;
@@ -103,9 +105,9 @@
   }
 
   &__body {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 0.3s ease-in-out;
+    transition: max-height 1s cubic-bezier(0.22, 0.61, 0.36, 1);
     border-bottom: 1px solid #C4C4C4;
   }
 
@@ -115,7 +117,7 @@
 
   &__text {
     color: $accordionTextContent;
-    font-size: 16px;
+    font-size: 18px;
     @include lg {
       font-size: 20px;
     }
@@ -145,6 +147,7 @@
     }
 
     .accordion__text {
+      font-size: 18px;
       margin-bottom: 30px;
     }
 

@@ -1,7 +1,7 @@
 function instagramIntegration() {
   let xhr = new XMLHttpRequest();
   const container = document.querySelector("#instagam-cont");
-  const instaUserName = document.querySelectorAll(".instagram__user-name"); 
+  const instaUserName = document.querySelectorAll(".instagram__user-name");
   const instaImg = document.querySelectorAll(".instagram__image img");
   const instaOld = document.querySelectorAll(".instagram__img__old");
   const accountTitle = document.querySelector(".instagram__name-account");
@@ -15,14 +15,14 @@ function instagramIntegration() {
       let posts = JSON.parse(xhr.response).posts;
       if(posts){
         accountTitle.innerHTML= "@"+posts[0].user_full_name;
-        for (let i = 0; i < 4; i++) { 
+        for (let i = 0; i < 4; i++) {
           try{
-            const post = posts[i];  
-            instaUserName[i].innerHTML = "@"+post.user_full_name;  
-            instaImg[i].src=post.image;   
+            const post = posts[i];
+            instaUserName[i].innerHTML = "@"+post.user_full_name;
+            instaImg[i].src=post.image;
           }catch (e){
             console.log(e);
-          } 
+          }
         }
       }
     }

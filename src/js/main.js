@@ -161,8 +161,12 @@ function accordionInit() {
         openedItem(item);
       });
 
-      title.addEventListener("keydown", (e) => {
-        openedItem(item);
+      title.addEventListener("keydown", (event) => {
+        if (event.code==='Enter'){
+
+          openedItem(item);
+        }
+
       });
     });
 
@@ -173,7 +177,10 @@ function accordionInit() {
         body.removeAttribute("style");
         item.classList.remove("is-open");
       } else {
-        body.style.height = body.scrollHeight + "px";
+        body.style.overflow = 'hidden';
+        body.style.transition = 'max-height 10s cubic-bezier(0.22, 0.61, 0.36, 1)';
+        body.style.maxHeight = '2000px';
+
         item.classList.add("is-open");
       }
     };
@@ -254,10 +261,6 @@ try {
             },
             992: {
               slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            1170: {
-              slidesPerView: 3,
               spaceBetween: 50,
             },
           },
@@ -285,9 +288,9 @@ try {
   let init = false;
 
   function swiperMode() {
-    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 992px)");
+    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 1200px)");
     let desktop = window.matchMedia(
-      "(min-width: 993px) and (max-width: 4000px)"
+      "(min-width: 1200px) and (max-width: 4000px)"
     );
 
     if (mobile.matches) {
