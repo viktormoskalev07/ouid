@@ -1,29 +1,10 @@
 .accessories-category {
+  width: 100%;
   position: relative;
   background-color: $backgroundAccessories;
-
-  .swiper-accessories {
-    .swiper-wrapper {
-      height: auto;
-      @include lg {
-        .swiper-slide {
-          width: 30%;
-        }
-      }
-    }
-  }
-
-  @include lg {
-    .swiper-accessories.swiper-container {
-      width: 100%;
-      padding: 0 40px;
-    }
-  }
+  z-index: 1;
 
 
-  .swiper-accessories {
-    margin: 0 -20px;
-  }
 
   .swiper-button-prev-accessories,
   .swiper-button-next-accessories {
@@ -33,7 +14,7 @@
     @media (min-width: 700px) {
       display: block;
     }
-    @include lg {
+    @include xl {
       display: none;
     }
   }
@@ -46,7 +27,7 @@
     padding-top: 95px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
   }
 
   &__title {
@@ -74,14 +55,6 @@
     }
   }
 
-  &__cards-box {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    @include lg {
-      justify-content: space-around;
-    }
-  }
 
   &__btn {
     background-color: $ShopAccessoriesBtn;
@@ -99,6 +72,7 @@
 
 
   &__img-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,5 +123,4 @@
       box-shadow: $ShopAccessoriesShadowFocus;
     }
   }
-
 }
