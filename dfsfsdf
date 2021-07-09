@@ -1,0 +1,285 @@
+[33mcommit a5ada0ac2e916f2ef38829729b2a8a304474539d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: unknown <viktormoskalev07@gmail.com>
+Date:   Fri Jun 11 15:18:30 2021 +0300
+
+    changes in dropdown
+
+[33mcommit 7483fcd98427893a3ed1e17d6947585a6c7c7cc2[m[33m ([m[1;32mviktor[m[33m)[m
+Author: unknown <viktormoskalev07@gmail.com>
+Date:   Fri Jun 11 15:14:57 2021 +0300
+
+    change nav
+
+[33mcommit 0466b8a6eae7fe2e6998ac8940cff9bab33076fc[m[33m ([m[1;31morigin/nata[m[33m)[m
+Author: MatviienkoNataliia <admin@MatviienkoNataliias-Mac-mini.local>
+Date:   Fri Jun 11 12:51:55 2021 +0300
+
+    add favicon and fix
+
+[33mcommit f18dd6f9cfe7b5d8b41478e82fe8eb95f350b91b[m
+Merge: 4cff6b1 aa15558
+Author: Shangria <46632810+Shangria@users.noreply.github.com>
+Date:   Thu Jun 10 18:18:08 2021 +0300
+
+    Merge pull request #14 from viktormoskalev07/shangri
+    
+    Shangri
+
+[33mcommit aa1555833c2e7d59c3d021168dba2c3529d8cdec[m
+Merge: 3bd7063 4cff6b1
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Thu Jun 10 18:17:14 2021 +0300
+
+    fix
+
+[33mcommit 3bd706369abf9083f981883b4283f4ec085d4e57[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Thu Jun 10 18:13:34 2021 +0300
+
+    fix accordion
+
+[33mcommit 9efd21ec434228aa0e04c9e1fdf9b1071a8dc2f8[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Thu Jun 10 18:12:59 2021 +0300
+
+    fix accordion
+
+[33mcommit 4cff6b1887a8962a0e7eb80b5e3c9cb6ac76fa56[m[33m ([m[1;31morigin/alex[m[33m)[m
+Author: admin <alexvak1993@gmail.com>
+Date:   Thu Jun 10 17:51:22 2021 +0300
+
+    max-height to blog-grid, preloader set timeout add
+
+[33mcommit ad3eaf1606825db36cb8ce8e5334719600a0b8dd[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Thu Jun 10 17:17:43 2021 +0300
+
+    fix slider
+
+[33mcommit d8dd3c33721d521d5d008175be109505b2b435c9[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Thu Jun 10 12:33:26 2021 +0300
+
+    adaptive wholesale-portal
+
+[33mcommit 5a53ba6c22dd80811fe7c7efdd5bc4e04a0c63ae[m
+Author: admin <alexvak1993@gmail.com>
+Date:   Thu Jun 10 11:07:00 2021 +0300
+
+    header minor fixes
+
+[33mcommit 0680c95d7e981f2e72f9456fc9791e4982b303a9[m
+Merge: ecee874 ec51151
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Thu Jun 10 10:51:38 2021 +0300
+
+    adaptive instagram
+
+[33mcommit 542a8b4145da54ba41117df9c12ed74680d6374f[m
+Merge: 733d023 ec51151
+Author: admin <alexvak1993@gmail.com>
+Date:   Thu Jun 10 10:03:13 2021 +0300
+
+    Merge remote-tracking branch 'origin' into alex
+
+[33mcommit ec51151ad347778be350f52e896ec7d62b2eb1cd[m
+Merge: 1825330 8978dfb
+Author: MatviienkoNataliia <admin@MatviienkoNataliias-Mac-mini.local>
+Date:   Wed Jun 9 18:19:31 2021 +0300
+
+    page faq
+
+[33mcommit 733d023b9f0142f60526a5b9e2ff9802b9ad408d[m
+Author: admin <alexvak1993@gmail.com>
+Date:   Wed Jun 9 18:18:28 2021 +0300
+
+    medium share post
+
+[33mcommit ecee8741a9b459759b50cd4f01ee15d706860e71[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 18:17:20 2021 +0300
+
+    created instagram
+
+[33mcommit 182533077868979f6ea769c22d8a46e367048f37[m
+Author: MatviienkoNataliia <admin@MatviienkoNataliias-Mac-mini.local>
+Date:   Wed Jun 9 18:13:09 2021 +0300
+
+    created page faq
+
+[33mcommit 8978dfbb0c1c707e490d5f37e1e3d396ecee7ac0[m
+Author: admin <alexvak1993@gmail.com>
+Date:   Wed Jun 9 17:43:43 2021 +0300
+
+    add share functionality to post.html
+
+[33mcommit b85569b585953f2d61c8a59002c30000e05ebb49[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 17:23:45 2021 +0300
+
+    fix slider
+
+[33mcommit bcd93528588bfabed64d72061255f18897e0c1b9[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 16:16:02 2021 +0300
+
+    fix adaptive location, accordion
+
+[33mcommit 2080769f484a27547b981592cfbf17525f38708a[m
+Author: admin <alexvak1993@gmail.com>
+Date:   Wed Jun 9 16:15:37 2021 +0300
+
+    blog&post separated, grid system rewrite to nth-of-type
+
+[33mcommit 9d7d39413ec035491c21411df47f64782a1ccc34[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 16:08:12 2021 +0300
+
+    fix accessories
+
+[33mcommit 0c159fd058b51e66a964789aa155f049e45d8b51[m
+Author: unknown <viktormoskalev07@gmail.com>
+Date:   Wed Jun 9 13:01:54 2021 +0300
+
+    php customizer
+
+[33mcommit 23ef051a25eb6add72e44d3bea9e0755ac549ee2[m
+Merge: 285705a c95eb5e
+Author: MatviienkoNataliia <admin@MatviienkoNataliias-Mac-mini.local>
+Date:   Wed Jun 9 12:26:39 2021 +0300
+
+    fixed hands and add order
+
+[33mcommit 285705ab944e31f3612d6048fc14bd6e527b5b42[m
+Author: MatviienkoNataliia <admin@MatviienkoNataliias-Mac-mini.local>
+Date:   Wed Jun 9 12:20:09 2021 +0300
+
+    fix hands and add order
+
+[33mcommit c95eb5e464b28767d0ef4cff191fb16eb6b07a97[m
+Merge: 95067ba c5eb789
+Author: Shangria <46632810+Shangria@users.noreply.github.com>
+Date:   Wed Jun 9 11:29:50 2021 +0300
+
+    Merge pull request #12 from viktormoskalev07/shangri
+    
+    Shangri
+
+[33mcommit c5eb789aa33169d6c383173db9a093a5083d0fbc[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 11:28:35 2021 +0300
+
+    remove waves
+
+[33mcommit 48bcdd52c4b3de9e97a641972d7024d2bd7e394d[m
+Merge: 0ff2e3f 95067ba
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 11:26:32 2021 +0300
+
+    remove waves
+
+[33mcommit 0ff2e3fec17e62a1b66d996f3737545b8865e448[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 11:14:24 2021 +0300
+
+    added svg BG accessories-category
+
+[33mcommit 5cb0984d2a6d8ef89add2a582dc7eea5d9095ca5[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 11:02:44 2021 +0300
+
+    added svg BG cannabis
+
+[33mcommit 99ff0df8114bcdcaad96a8b70e0e287b103365b2[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 10:49:28 2021 +0300
+
+    added keydown
+
+[33mcommit 1ab619d89d10be652850d21106a48628a8023741[m
+Merge: a2fb53c d69c7e8
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Wed Jun 9 10:47:22 2021 +0300
+
+    added keydown
+
+[33mcommit 95067ba61fda47e8448a907f6597b550c3a3199c[m
+Merge: dbcd2b1 d69c7e8
+Author: MatviienkoNataliia <admin@MatviienkoNataliias-Mac-mini.local>
+Date:   Wed Jun 9 10:19:56 2021 +0300
+
+    fix wave
+
+[33mcommit d69c7e84b97bdd96d1f82dd9f36278c6c4f7b077[m
+Author: Viktor <viktormoskalev07>
+Date:   Tue Jun 8 20:38:47 2021 +0300
+
+    remove settings
+
+[33mcommit 3912c0fa3545a15425338344297edc2abac300ac[m
+Merge: 10a786c 7fb0c18
+Author: admin <alexvak1993@gmail.com>
+Date:   Tue Jun 8 18:11:52 2021 +0300
+
+    resolve conflicts
+
+[33mcommit 10a786c0943fce77d8518b46c3dfd9046e7de9d5[m
+Author: admin <alexvak1993@gmail.com>
+Date:   Tue Jun 8 18:07:32 2021 +0300
+
+    blog page, header fix, swiper error fix
+
+[33mcommit dbcd2b1e2cb57eebf08bbe714cd59956d18a90a7[m
+Author: MatviienkoNataliia <admin@MatviienkoNataliias-Mac-mini.local>
+Date:   Tue Jun 8 17:26:25 2021 +0300
+
+    fix wave
+
+[33mcommit 7fb0c184518ceec8b1d97c4f9d5a5c156fd81ad9[m
+Author: unknown <viktormoskalev07@gmail.com>
+Date:   Tue Jun 8 15:50:05 2021 +0300
+
+    VAR changes
+
+[33mcommit a2fb53c691e9e105d6b9fcd81e377aa034371321[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Tue Jun 8 14:56:42 2021 +0300
+
+    fix img
+
+[33mcommit eeb527172fa3d71d4fc2762992b9db09b28670fe[m
+Author: admin <alexvak1993@gmail.com>
+Date:   Tue Jun 8 14:55:12 2021 +0300
+
+    header-mobile rewrited, fonts changed
+
+[33mcommit ada70fb91e14d882b0dcfa272e30321bebfd8e7b[m
+Merge: fbace5b 9d6a678
+Author: Shangria <46632810+Shangria@users.noreply.github.com>
+Date:   Tue Jun 8 12:00:57 2021 +0300
+
+    Merge pull request #11 from viktormoskalev07/shangri
+    
+    Shangri
+
+[33mcommit 9d6a6780e9b6ff8be0cc30c3555419d6eaa2c5a9[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Tue Jun 8 12:00:14 2021 +0300
+
+    fix slider, arrows, accordion
+
+[33mcommit 235f53358211828850962ab325b9e01f52e0a72a[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Tue Jun 8 11:46:35 2021 +0300
+
+    fix slider, arrows, accordion
+
+[33mcommit 895110d2eb22e56e91e87ff001995c9c152cf4b3[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Tue Jun 8 11:42:21 2021 +0300
+
+    fix slider, arrows, accordion
+
+[33mcommit 7c62f24c5a4ece921c2f44648f5ee3060c076d17[m
+Author: Shangri <astasenko@smart-ui.pro>
+Date:   Tue Jun 8 11:30:59 20
