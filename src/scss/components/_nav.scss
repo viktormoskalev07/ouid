@@ -45,11 +45,17 @@
 					padding: 15px 35px;
 					border-radius: 5px;
 					font-size: 15px;
-					&:hover{
+					transition: .3s;
+					&:hover{ 
 						&:after{
 							display: none;
 						}
 					}
+					&:hover,
+						:focus {
+							outline: none;
+							box-shadow: 0 0px 8px 2px $headerShadowFocus;
+						}
 					
 				}
 				@include xxl {
