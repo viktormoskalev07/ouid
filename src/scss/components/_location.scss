@@ -112,6 +112,8 @@
     font-size: 16px;
     line-height: 150%;
     padding: 50px 0 75px;
+    color: #172A2E;
+    opacity: .5;
     @include lg {
       font-size: 18px;
     }
@@ -123,6 +125,7 @@
 
   &__data {
     padding-right: 30px;
+    text-align: right;
   }
 
   &__btn {

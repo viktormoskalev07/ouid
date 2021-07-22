@@ -1,7 +1,7 @@
 .blog-grid, .blog-page {
-
+  padding: 0 0 130px;
   @include lg {
-    padding: 120px 0 90px;
+    padding: 120px 0 220px;
   }
 
   &__container {
@@ -18,8 +18,10 @@
     border-radius: 25px;
     overflow: hidden;
     background-color: $blogColorBg2;
+    
 
     picture {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -28,10 +30,13 @@
       overflow: hidden;
 
       img {
+        position: absolute;
+        top: 0;
+        left: 0;        
         object-fit: cover;
         object-position: center center;
         transition: .3s;
-        width: 100%;
+        max-width: 100%;
       }
     }
 

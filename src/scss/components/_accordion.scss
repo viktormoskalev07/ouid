@@ -3,7 +3,6 @@
   width: 100%;
   transition: 0.4s;
   padding-bottom: 100px;
-  margin-top: 130px;
   position: relative;
 
 
@@ -92,7 +91,7 @@
       position: absolute;
       right: 0px;
       top: -15px;
-      padding: 25px 5px;
+      padding: 25px 5px; 
     }
 
     .is-open &::after {
@@ -109,6 +108,9 @@
     overflow: hidden;
     transition: max-height 1s cubic-bezier(0.22, 0.61, 0.36, 1);
     border-bottom: 1px solid #C4C4C4;
+    @include lg{
+      border-bottom: 1px solid transparent;
+    }
   }
 
   &__content {

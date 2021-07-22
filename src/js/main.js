@@ -180,7 +180,6 @@ function accordionInit() {
         body.style.overflow = 'hidden';
         body.style.transition = 'max-height 10s cubic-bezier(0.22, 0.61, 0.36, 1)';
         body.style.maxHeight = '2000px';
-
         item.classList.add("is-open");
       }
     };

@@ -63,12 +63,13 @@
       }
 
       &__wrapper {
-        display: flex;
-        flex-direction: column;
-
-        @include sm {
-          flex-direction: row;
+        font-size: 14px;
+        @media screen and(min-width: 360px) {
+          font-size: 18px;
         }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
       }
 
       &__nav {
@@ -108,6 +109,8 @@
       }
 
       &__copyright {
+        font-size: 14px;
+        font-weight: 400;
         margin-top: 50px;
         flex: 0 0 100%;
         text-align: left;
@@ -127,10 +130,6 @@
       &__wrapper {
         width: 80%;
         margin: 75px auto 115px;
-
-        @include md {
-          margin: 40px auto;
-        }
 
         p {
           text-align: center;
