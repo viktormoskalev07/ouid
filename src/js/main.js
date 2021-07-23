@@ -193,35 +193,35 @@ if (document.querySelector(".accordion")) {
 
 //dropdown
 
-function dropdown() {
-  const drop = document.querySelector(".dropdown__activator");
-  // const dropBody = document.querySelector(".dropdown");
+// function dropdown() {
+//   const drop = document.querySelector(".dropdown__activator");
+//   // const dropBody = document.querySelector(".dropdown");
  
-    drop.addEventListener("click", function (e) {
-      target = e.target.classList.contains("dropdown__activator");
-      if (
-        (target = e.target.classList.contains("dropdown__activator")) ||
-        (target = e.target.tagName = "svg")
-      ) {
-        drop.classList.toggle("dropdown_open");
-      }
-    });
+//     drop.addEventListener("click", function (e) {
+//       target = e.target.classList.contains("dropdown__activator");
+//       if (
+//         (target = e.target.classList.contains("dropdown__activator")) ||
+//         (target = e.target.tagName = "svg")
+//       ) {
+//         drop.classList.toggle("dropdown_open");
+//       }
+//     });
  
-  //  else if (innerWidth > 992) {
-  //   dropBody.addEventListener("mouseenter", function () {
-  //     drop.classList.add("on-mouse-over");
-  //   });
-  //   dropBody.addEventListener("mouseleave", function () {
-  //     drop.classList.remove("on-mouse-over");
-  //   });
-  // }
-}
+//   //  else if (innerWidth > 992) {
+//   //   dropBody.addEventListener("mouseenter", function () {
+//   //     drop.classList.add("on-mouse-over");
+//   //   });
+//   //   dropBody.addEventListener("mouseleave", function () {
+//   //     drop.classList.remove("on-mouse-over");
+//   //   });
+//   // }
+// }
 
-try {
-  dropdown();
-} catch (e) {
-  console.log(e);
-}
+// try {
+//   dropdown();
+// } catch (e) {
+//   console.log(e);
+// }
 //dropdown
 
 //preloader
