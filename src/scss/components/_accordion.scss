@@ -83,23 +83,25 @@
     }
 
 
-    &::after {
-      transition: all 500s;
-      content: url('../images/icons/plus.svg');
-      font-size: 48px;
-      font-weight: 200;
-      position: absolute;
-      right: 0px;
-      top: -15px;
-      padding: 25px 5px; 
+    &::after , &::before {
+         content:' ';
+        right:0;
+        transition:0.3s;
+        font-size: 0;
+        position: absolute;
+        width: 33px;
+        height: 0px;
+        top:calc(50% - 1px); 
+        border-top: 2px solid #FDFAF3; 
     }
-
-    .is-open &::after {
-      transition: all 500s;
-      content: url('../images/icons/minus.svg');
-      position: absolute;
-      right: 0px;
-      top: -25px;
+    &::before { 
+        transform: rotate(-90deg); 
+    } 
+    .is-open &::before { 
+      transform: rotate(0deg);  
+    }
+    .is-open &::after { 
+      transform: rotate(180deg);  
     }
   }
 
@@ -161,13 +163,11 @@
         border-radius: 2px;
       }
 
-      &::after {
-        content: url('../images/icons/plus-dark.svg');
+      &::after , &::before{
+        border-top: 2px solid #182A2D;
+        
       }
     }
-
-    .is-open .accordion__title-text::after {
-      content: url('../images/icons/minus-dark.svg');
-    }
+ 
   }
 }
